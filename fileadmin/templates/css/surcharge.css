@@ -1,0 +1,73 @@
+/* HEADER start */
+#header h1 a{
+	display:block;
+}
+#header h1 span{
+    color: #d52349;
+    font-weight: 900;
+    font-size: 0.5em;
+    letter-spacing: -0.035em;
+    margin: 0 0 1em 0;
+}
+#header-wrapper {
+	padding: 0.5em 0 4em 0;
+}
+.bx-wrapper {
+	margin: 3em 0 0 0;
+}
+.bxslider li img {
+	width: 100%;
+}
+.bxslider li div {
+	bottom: inherit;
+    top: 35%;
+    left: 35%;
+    position: absolute;
+    right: inherit;
+    padding: 0;
+    background-color: white;
+    width: 550px;
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 5px;
+}
+.bxslider li div h2{
+	color: #d52349;
+	font-weight: bold;
+}
+.bxslider li div p{
+	margin: 0;
+	padding: 0;
+}
+.bxslider li div a{
+	float: right;
+    padding: 0 13px 0 0;
+    text-decoration: initial;
+    font-weight: bold;
+}
+.bx-wrapper .bx-viewport {
+	border: 0px solid #fff;
+	box-shadow: 0 0 5px #fff;
+	-moz-box-shadow: 0 0 5px #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+	left: inherit;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: -40px;
+}
+#intro section {
+	padding: 0;
+}
+.icon.featured {
+	margin: 0 0 3.5em 0;
+}
+/* HEADER end */
+
+/* CONTENT start */
+.posts_blog header{
+	margin:0;
+}
+.margintop {
+	margin: 0px 0 -1px -50px;
+}
+/* CONTENT start */
