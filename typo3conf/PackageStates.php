@@ -484,6 +484,26 @@ return array (
       array (
       ),
     ),
+    'news' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'georgringer/news',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/news/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'evian_news' => 
+    array (
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/evian_news/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'adodb' => 
     array (
       'manifestPath' => '',
@@ -556,6 +576,15 @@ return array (
       'composerName' => 'typo3/cms-linkvalidator',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/linkvalidator/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'news_extended' => 
+    array (
+      'state' => 'inactive',
+      'packagePath' => 'typo3conf/ext/news_extended/',
       'classesPath' => 'Classes/',
       'suggestions' => 
       array (
