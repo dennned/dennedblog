@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ko" datatype="plaintext" original="messages" date="2013-07-02T12:17:02Z" product-name="denned_news">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_dennednews_domain_model_news">
+				<target>News</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.tx_workshop_title">
+				<target>txWorkshopTitle</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_workshop_title">
+				<target>txWorkshopTitle</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_time_the">
+				<target>The</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_time_a">
+				<target>at</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_time_hours">
+				<target>:</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_page">
+				<target>News</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_back_to_the_list">
+				<target>Back to the list</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_share_title">
+				<target>Share this article</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_page_media">
+				<target>Media</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_download">
+				<target>Download</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_list_media_select_default">
+				<target>All</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_no_news_available">
+				<target>No medias available</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_no__page_news_available">
+				<target>No news available</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_link_all_photos">
+				<target>All photos</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.twitter_lang">
+				<target>en</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tfacebook_like_lang">
+				<target>en</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.facebook_lang">
+				<target>en_US</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.title_block_last_news">
+				<target>More news</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_01">
+				<target>January</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_02">
+				<target>February</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_03">
+				<target>March</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_04">
+				<target>April</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_05">
+				<target>May</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_06">
+				<target>June</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_07">
+				<target>July</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_08">
+				<target>August</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_09">
+				<target>September</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_10">
+				<target>October</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_11">
+				<target>November</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_12">
+				<target>December</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.read_more_title_menu_right">
+				<target>See more</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.title_bloc_right_ajax">
+				<target>ニュース</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.title_bloc_link_more">
+				<target>See all news</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.mobile.title_last_news">
+				<target>Last news</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.mobile.title_link_all_news">
+				<target>See all news</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.mobile.title_video_last_news">
+				<target>Video</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_all">
+				<target>All</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMedia">
+				<target>All News Media</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.alaUne">
+				<target>A la une</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownload">
+				<target>Telecharger</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownloadPhoto">
+				<target>Telecharger photo</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownloadVideo">
+				<target>Voir video</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

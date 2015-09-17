@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-07-02T12:17:02Z" product-name="denned_news">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_workshop_title.description">
+				<source>txWorkshopTitle</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,135 @@
+plugin.tx_dennednews{
+
+	view{
+		# cat=plugin.tx_news/file; type=string; label=Path to template root (FE)
+        templateRootPath = fileadmin/templates/ext/news/Templates/
+        # cat=plugin.tx_news/file; type=string; label=Path to template partials (FE)
+        partialRootPath = fileadmin/templates/ext/news/Partials/
+        # cat=plugin.tx_news/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = fileadmin/templates/ext/news/Layouts/
+	}
+
+	persistence {
+		storagePid = 62
+	}
+
+	settings{
+		list{
+			news {
+				uidDetailArticle = 64
+				uidDetailPhotos = 65
+				uidDetailVideos = 66
+				categoryArticle = 2
+				categoryPhoto = 3
+				categoryVideo = 4
+				catAlaUne = 3
+				limitAlaUne = 1
+			}
+		}
+
+	}
+}
+
+
+plugin.tx_news {
+    view {
+        # cat=plugin.tx_news/file; type=string; label=Path to template root (FE)
+        templateRootPath = fileadmin/templates/ext/news/Templates/
+        # cat=plugin.tx_news/file; type=string; label=Path to template partials (FE)
+        partialRootPath = fileadmin/templates/ext/news/Partials/
+        # cat=plugin.tx_news/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = fileadmin/templates/ext/news/Layouts/
+
+        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = fileadmin/templates/ext/news/Templates/
+    }
+    persistence {
+        # cat=plugin.tx_news//a; type=string; label=Default storage PID
+        storagePid =
+    }
+
+    settings{
+    	cssFile =
+
+    	pageListeNewArticle = 9
+    	pageListeNewMedia = 8
+    	heightMaxBlocAlaUne = 200
+    	widthMaxBlocAlaUne = 350
+
+    	widthMaxBlocAlaUneGrande = 808
+    	heighMaxBlocAlaUneGrande = 438
+
+    	cropAlaUne = 200
+
+		list {
+			media {
+				uidPageInformationAndGraphics = 22
+				uidPageFollowTheTournament = 23
+				uidPageYourComing = 24
+				uidPagePhotos = 25
+
+				image {
+					maxWidth = 249
+					maxHeight = 199
+				}
+				categorieDocument = 10
+				categoriePhoto = 11
+				categorieVideo = 12
+				categorieParent = 9
+
+				categoryParentTheme = 5
+				categoryChildInformationAndGraphics = 6
+				categoryChildFollowTournament = 7
+				categoryChildYourComing = 8
+				categoryChildPhotos = 13
+
+				catAlaUne = 16
+				limitAlaUne = 1
+				catAlaUneList = 10,11,12
+				limitAlaUneListStart = 1
+				limitAlaUneListEnd = 9
+				alaUneDetail = 135
+				pidMedia = 63
+			}
+
+			news {
+				uidDetailArticle = 64
+				uidDetailPhotos = 65
+				uidDetailVideos = 66
+				categoryArticle = 2
+				categoryPhoto = 3
+				categoryVideo = 4
+
+				categoryImageMedia = 11
+				categoryVideoMedia = 12
+				categoryDocMedia = 10
+
+
+				mobile{
+					pageListNews = 71
+					pageDetailNews = 93
+					image {
+						maxWidth = 117
+						maxHeight = 94
+					}
+				}
+			}
+
+			paginate {
+				itemsPerPage = 9
+				insertAbove = 0
+				insertBelow = 1
+			}
+		}
+
+		detail{
+			media{
+				image{
+					maxWidth = 792
+					maxHeight = 409
+				}
+			}
+		}
+
+    }
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2013-07-02T12:17:02Z" product-name="denned_news">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_dennednews_domain_model_news">
+				<target>News</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news_action_list_last_news">
+				<target>Liste des dernières actualités</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news_template_layout_mobile">
+				<target>Mobile</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news_template_layout_news">
+				<target>Web</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news_action_list_media_news">
+				<target>Liste des médias</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

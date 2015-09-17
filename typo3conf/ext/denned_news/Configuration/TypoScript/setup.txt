@@ -1,0 +1,152 @@
+config.tx_extbase {
+	objects{
+		#Tx_News_Controller_NewsController.className = Tx_DennedNews_Controller_NewsController
+		Tx_News_Domain_Repository_NewsRepository.className = Tx_DennedNews_Domain_Repository_NewsRepository
+		GeorgRinger\News\Controller\NewsController.className = Tx_DennedNews_Controller_NewsController
+	}
+
+	persistence {
+		classes {
+			Tx_DennedNews_Domain_Model_News{
+				mapping{
+					tableName = tx_news_domain_model_news
+				}
+			}
+		}
+	}
+
+}
+
+plugin.tx_dennednews{
+
+	view{
+		# cat=plugin.tx_news/file; type=string; label=Path to template root (FE)
+        templateRootPath = {$plugin.tx_dennednews.view.templateRootPath}
+        # cat=plugin.tx_news/file; type=string; label=Path to template partials (FE)
+        partialRootPath = {$plugin.tx_dennednews.view.partialRootPath}
+        # cat=plugin.tx_news/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = {$plugin.tx_dennednews.view.layoutRootPath}
+	}
+
+	persistence {
+		storagePid = {$plugin.tx_dennednews.persistence.storagePid}
+	}
+
+	settings{
+		list{
+			news {
+				categoryArticle = {$plugin.tx_dennednews.settings.list.news.categoryArticle}
+				categoryPhoto = {$plugin.tx_dennednews.settings.list.news.categoryPhoto}
+				categoryVideo = {$plugin.tx_dennednews.settings.list.news.categoryVideo}
+				uidDetailArticle = {$plugin.tx_dennednews.settings.list.news.uidDetailArticle}
+				uidDetailPhotos = {$plugin.tx_dennednews.settings.list.news.uidDetailPhotos}
+				uidDetailVideos = {$plugin.tx_dennednews.settings.list.news.uidDetailVideos}
+				catAlaUne = {$plugin.tx_dennednews.settings.list.news.catAlaUne}
+				limitAlaUne = {$plugin.tx_dennednews.settings.list.news.limitAlaUne}
+			}
+		}
+	}
+}
+
+plugin.tx_news {
+
+    view {
+        templateRootPath = {$plugin.tx_news.view.templateRootPath}
+        partialRootPath = {$plugin.tx_news.view.partialRootPath}
+        layoutRootPath = {$plugin.tx_news.view.layoutRootPath}
+
+        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = {$plugin.tx_news.view.widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_news.persistence.storagePid}
+    }
+    features {
+        # uncomment the following line to enable the new Property Mapper.
+        # rewrittenPropertyMapper = 1
+    }
+
+	settings{
+		cssFile = {$plugin.tx_news.settings.cssFile}
+
+		pageListeNewArticle = {$plugin.tx_news.settings.pageListeNewArticle}
+		pageListeNewMedia = {$plugin.tx_news.settings.pageListeNewMedia}
+
+		heightMaxBlocAlaUne = {$plugin.tx_news.settings.heightMaxBlocAlaUne}
+    	widthMaxBlocAlaUne = {$plugin.tx_news.settings.widthMaxBlocAlaUne}
+
+    	widthMaxBlocAlaUneGrande = {$plugin.tx_news.settings.widthMaxBlocAlaUneGrande}
+    	heighMaxBlocAlaUneGrande = {$plugin.tx_news.settings.heighMaxBlocAlaUneGrande}
+
+    	cropAlaUne = {$plugin.tx_news.settings.cropAlaUne}
+
+		list {
+			media {
+				uidPageInformationAndGraphics = {$plugin.tx_news.settings.list.media.uidPageInformationAndGraphics}
+				uidPageFollowTheTournament = {$plugin.tx_news.settings.list.media.uidPageFollowTheTournament}
+				uidPageYourComing = {$plugin.tx_news.settings.list.media.uidPageYourComing}
+				uidPagePhotos = {$plugin.tx_news.settings.list.media.uidPagePhotos}
+
+				image {
+					maxWidth = {$plugin.tx_news.settings.list.media.image.maxWidth}
+					maxHeight = {$plugin.tx_news.settings.list.media.image.maxHeight}
+				}
+				categorieDocument = {$plugin.tx_news.settings.list.media.categorieDocument}
+				categoriePhoto = {$plugin.tx_news.settings.list.media.categoriePhoto}
+				categorieVideo = {$plugin.tx_news.settings.list.media.categorieVideo}
+				categorieParent = {$plugin.tx_news.settings.list.media.categorieParent}
+
+				categoryParentTheme = {$plugin.tx_news.settings.list.media.categoryParentTheme}
+				categoryChildInformationAndGraphics = {$plugin.tx_news.settings.list.media.categoryChildInformationAndGraphics}
+				categoryChildFollowTournament = {$plugin.tx_news.settings.list.media.categoryChildFollowTournament}
+				categoryChildYourComing = {$plugin.tx_news.settings.list.media.categoryChildYourComing}
+				categoryChildPhotos = {$plugin.tx_news.settings.list.media.categoryChildPhotos}
+
+				catAlaUne = {$plugin.tx_news.settings.list.media.catAlaUne}
+				limitAlaUne = {$plugin.tx_news.settings.list.media.limitAlaUne}
+				catAlaUneList = {$plugin.tx_news.settings.list.media.catAlaUneList}
+				limitAlaUneListStart = {$plugin.tx_news.settings.list.media.limitAlaUneListStart}
+				limitAlaUneListEnd = {$plugin.tx_news.settings.list.media.limitAlaUneListEnd}
+				alaUneDetail = {$plugin.tx_news.settings.list.media.alaUneDetail}
+				pidMedia = {$plugin.tx_news.settings.list.media.pidMedia}
+			}
+
+			news {
+				categoryArticle = {$plugin.tx_news.settings.list.news.categoryArticle}
+				categoryPhoto = {$plugin.tx_news.settings.list.news.categoryPhoto}
+				categoryVideo = {$plugin.tx_news.settings.list.news.categoryVideo}
+				uidDetailArticle = {$plugin.tx_news.settings.list.news.uidDetailArticle}
+				uidDetailPhotos = {$plugin.tx_news.settings.list.news.uidDetailPhotos}
+				uidDetailVideos = {$plugin.tx_news.settings.list.news.uidDetailVideos}
+
+				categoryImageMedia = {$plugin.tx_news.settings.list.news.categoryImageMedia}
+				categoryVideoMedia = {$plugin.tx_news.settings.list.news.categoryVideoMedia}
+				categoryDocMedia = {$plugin.tx_news.settings.list.news.categoryDocMedia}
+
+				mobile{
+					pageListNews = {$plugin.tx_news.settings.list.news.mobile.pageListNews}
+					pageDetailNews = {$plugin.tx_news.settings.list.news.mobile.pageDetailNews}
+					image {
+						maxWidth = {$plugin.tx_news.settings.list.news.mobile.image.maxWidth}
+						maxHeight = {$plugin.tx_news.settings.list.news.mobile.image.maxHeight}
+					}
+				}
+			}
+
+			paginate {
+				itemsPerPage = {$plugin.tx_news.settings.list.paginate.itemsPerPage}
+				insertAbove = {$plugin.tx_news.settings.list.paginate.insertAbove}
+				insertBelow = {$plugin.tx_news.settings.list.paginate.insertBelow}
+			}
+		}
+
+		detail{
+			media{
+				image{
+					maxWidth = {$plugin.tx_news.settings.detail.media.image.maxWidth}
+					maxHeight = {$plugin.tx_news.settings.detail.media.image.maxHeight}
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2013-07-02T12:17:02Z" product-name="denned_news">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_time_the">
+				<target>Le</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_time_a">
+				<target>à</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_time_hours">
+				<target>h</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_page">
+				<target>Actualités</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_back_to_the_list">
+				<target>Revenir à la liste </target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_share_title">
+				<target>Partagez cet article</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_page_media">
+				<target>Média</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_download">
+				<target>Télécharger</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_list_media_select_default">
+				<target>Tous</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_no_news_available">
+				<target>Aucun média disponible</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_no__page_news_available">
+				<target>Aucune news n'est disponible</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_link_all_photos">
+				<target>Toutes les photos</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.twitter_lang">
+				<target>fr</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tfacebook_like_lang">
+				<target>fr</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.facebook_lang">
+				<target>fr_FR</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.title_block_last_news">
+				<target>A consulter aussi</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_01">
+				<target>Janvier</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_02">
+				<target>Février</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_03">
+				<target>Mars</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_04">
+				<target>Avril</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_05">
+				<target>Mai</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_06">
+				<target>Juin</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_07">
+				<target>Juillet</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_08">
+				<target>Août</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_09">
+				<target>Septembre</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_10">
+				<target>Octobre</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_11">
+				<target>Novembre</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_12">
+				<target>Décembre</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.read_more_title_menu_right">
+				<target>A lire aussi</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.title_bloc_right_ajax">
+				<target>Derniers articles </target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.title_bloc_link_more">
+				<target>Voir toutes les actus</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.mobile.title_last_news">
+				<target>Dernières actualités</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.mobile.title_link_all_news">
+				<target>Toutes les actualités</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.mobile.title_video_last_news">
+				<target>Vidéo</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_all">
+				<target>Tous</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMedia">
+				<target>Toutes les actus media</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.alaUne">
+				<target>A la une</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownload">
+				<target>Telecharger</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownloadPhoto">
+				<target>Telecharger photo</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownloadVideo">
+				<target>Voir video</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
