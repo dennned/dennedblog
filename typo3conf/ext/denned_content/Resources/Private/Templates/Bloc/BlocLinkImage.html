@@ -1,0 +1,74 @@
+<f:if condition="{position} == 2">
+	<f:then>
+		<f:if condition="{settings.cadrebloc} == 0">
+			<div class="block-img-link">
+				<f:if condition="{linkright} == 0">
+					<f:then>
+							<f:link.external uri="{settings.link}" target="_blank">
+								<f:image src="{settings.image}" width="{settings.widthMaxBlocGeneric}c" height="{settings.heightMaxBlocGeneric}c" alt="" />
+								<p>{bloc.header}</p>
+								<span class="bar-rose icon-right-open-1"></span>
+							</f:link.external>
+					</f:then>
+					<f:else>
+							<f:link.page pageUid="{settings.link}" target="_blank">
+								<f:image src="{settings.image}" width="{settings.widthMaxBlocGeneric}c" height="{settings.heightMaxBlocGeneric}c" alt="" />
+								<p>{bloc.header}</p>
+								<span class="bar-rose icon-right-open-1"></span>
+							</f:link.page>
+					</f:else>
+				</f:if>
+			</div>
+		</f:if>
+	</f:then>
+</f:if>
+
+<f:if condition="{position} == 2">
+	<f:then>
+		<f:if condition="{settings.cadrebloc} == 1">
+			<div class="block-social block-facebook">
+				<f:if condition="{linkright} == 0">
+					<f:then>
+						<f:link.external uri="{settings.link}" target="_blank">
+							<f:image src="{settings.image}" width="{settings.widthMaxBlocSociaux}c" height="{settings.heightMaxBlocSociaux}c" alt="" />
+							<p>{bloc.header}</p>
+							<span class="bar-rose"></span>
+						</f:link.external>
+					</f:then>
+					<f:else>
+						<f:link.page pageUid="{settings.link}" target="_blank">
+							<f:image src="{settings.image}" width="{settings.widthMaxBlocSociaux}c" height="{settings.heightMaxBlocSociaux}c" alt="" />
+							<p>{bloc.header}</p>
+							<span class="bar-rose"></span>
+						</f:link.page>
+					</f:else>
+				</f:if>
+			</div>
+		</f:if>
+	</f:then>
+</f:if>
+
+<f:if condition="{position} == 2">
+	<f:then>
+		<f:if condition="{settings.cadrebloc} == 2">
+			<div class="block-social block-twitter">
+				<f:if condition="{linkright} == 0">
+					<f:then>
+						<f:link.external uri="{settings.link}" target="_blank">
+							<f:image src="{settings.image}" width="{settings.widthMaxBlocSociaux}c" height="{settings.heightMaxBlocSociaux}c" alt="" />
+							<p>{bloc.header}</p>
+							<span class="bar-rose"></span>
+						</f:link.external>
+					</f:then>
+					<f:else>
+						<f:link.page pageUid="{settings.link}" target="_blank">
+							<f:image src="{settings.image}" width="{settings.widthMaxBlocSociaux}c" height="{settings.heightMaxBlocSociaux}c" alt="" />
+							<p>{bloc.header}</p>
+							<span class="bar-rose"></span>
+						</f:link.page>
+					</f:else>
+				</f:if>
+			</div>
+		</f:if>
+	</f:then>
+</f:if>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-27T17:37:14Z" product-name="denned_content">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_dennedcontent_domain_model_bloc">
+				<source>Bloc</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc">
+				<source>[Denned] Content Bloc</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_name">
+				<source>[Denned] Presentation bloc home page</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_description">
+				<source>Plugin to display the bloc presentation in the Home page</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_name">
+				<source>[Denned] Bloc link image</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_description">
+				<source>Plugin to display a bloc link image</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1">
+				<source>Display during</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_start_date">
+				<source>Start date</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_end_date">
+				<source>End date</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_titre">
+				<source>Title</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_texte">
+				<source>Texte</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_link">
+				<source>Link</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_libelle">
+				<source>Label</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2">
+				<source>Display before</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_bloc_html">
+				<source>Bloc HTML</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_link">
+				<source>Link</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_label">
+				<source>Label</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet3">
+				<source>Right display</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet3_bloc_rolex">
+				<source>Display the bloc Rolex</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet3_link_mobile">
+				<source>Display the link mobile</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet1">
+				<source>Configuration bloc</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet1_label_bloc_cadre">
+				<source>Part of the block </source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet1_label_image">
+				<source>Image</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_label_link">
+				<source>Link</source>
+			</trans-unit>
+
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_hightlight">
+				<source>Highlight</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet3_bloc_hightlight">
+				<source>Display the bloc Highlight</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet3_bloc_displayblocnews">
+				<source>Display the  bloc News</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_libellelienactu">
+				<source>Label all news</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_linkactu">
+				<source>Link all news</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_libellelienbillet">
+				<source>Label billet</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_linkbillet">
+				<source>link billet</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_imagebillet">
+				<source>Image billet</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_libellelienboutique">
+				<source>Label boutique</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_linkboutique">
+				<source>Link boutique</source>
+			</trans-unit>
+<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_imageboutique">
+				<source>Image boutique</source>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

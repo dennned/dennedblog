@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-27T17:37:14Z" product-name="denned_content">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_dennedcontent_domain_model_bloc">
+				<target>Entity Bloc</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennedcontent_domain_model_bloc_pi1_link_by_default">
+				<target>온라인 부틱</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennedcontent_domain_model_bloc_pi1_link_mobile_site">
+				<target>Display the mobile site</target>
+			</trans-unit>
+
+			<trans-unit id="tx_dennedcontent_domain_model_watchjs">
+				<target>watch_ko.js</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

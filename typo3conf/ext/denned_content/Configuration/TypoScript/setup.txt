@@ -1,0 +1,52 @@
+plugin.tx_dennedcontent {
+	view {
+		templateRootPath = {$plugin.tx_dennedcontent.view.templateRootPath}
+		partialRootPath = {$plugin.tx_dennedcontent.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_dennedcontent.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_dennedcontent.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+
+	settings{
+		uidPageMobile ={$plugin.tx_dennedcontent.settings.uidPageMobile}
+		widthMaxBlocGeneric = {$plugin.tx_dennedcontent.settings.widthMaxBlocGeneric}
+		heightMaxBlocGeneric = {$plugin.tx_dennedcontent.settings.heightMaxBlocGeneric}
+		widthMaxBlocGenericHome = {$plugin.tx_dennedcontent.settings.widthMaxBlocGenericHome}
+		heightMaxBlocGenericHome = {$plugin.tx_dennedcontent.settings.heightMaxBlocGenericHome}
+		widthMaxBlocSociaux = {$plugin.tx_dennedcontent.settings.widthMaxBlocSociaux}
+		heightMaxBlocSociaux = {$plugin.tx_dennedcontent.settings.heightMaxBlocSociaux}
+		uidDetailNews = {$plugin.tx_dennedcontent.settings.uidDetailNews}
+		uidCategory = {$plugin.tx_dennedcontent.settings.uidCategory}
+		limitHomeNews = {$plugin.tx_dennedcontent.settings.limitHomeNews}
+	}
+}
+
+plugin.tx_dennedcontent._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-denned-content table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-denned-content table th {
+		font-weight:bold;
+	}
+
+	.tx-denned-content table td {
+		vertical-align:top;
+	}
+)

@@ -1,0 +1,13 @@
+config.tx_extbase{
+    persistence{
+        classes{
+
+            TYPO3\DennedContent\Domain\Model\Bloc {
+                mapping {
+                    tableName = tt_content
+                }
+            }
+
+    	}
+    }
+}

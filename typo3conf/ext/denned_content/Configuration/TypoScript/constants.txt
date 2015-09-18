@@ -1,0 +1,27 @@
+plugin.tx_dennedcontent {
+	view {
+		# cat=plugin.tx_dennedcontent/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:denned_content/Resources/Private/Templates/
+		# cat=plugin.tx_dennedcontent/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:denned_content/Resources/Private/Partials/
+		# cat=plugin.tx_dennedcontent/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:denned_content/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_dennedcontent//a; type=string; label=Default storage PID
+		storagePid = 62
+	}
+
+	settings{
+		uidPageMobile = 64
+		widthMaxBlocGeneric = 270
+		heightMaxBlocGeneric = 148
+		widthMaxBlocGenericHome = 290
+		heightMaxBlocGenericHome = 232
+		widthMaxBlocSociaux = 270
+		heightMaxBlocSociaux = 148
+		uidDetailNews = 133
+		uidCategory = 14
+		limitHomeNews = 5
+	}
+}

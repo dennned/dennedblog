@@ -1,0 +1,1025 @@
+/*
+    Document   : clock.css
+    Description:
+        Style of the clock.
+*/
+#rolex-clock a {
+    display: block;
+}
+.ie6 #rolex-clock a, .ie7 #rolex-clock a, .ie8 #rolex-clock a, .ie9 #rolex-clock a {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content, .countdown, #rolex-clock img {
+    width: 300px;/* content width */
+}
+/* global height */
+.content, noscript a img, .tracker .tracker-1, .tracker .tracker-2, .countdown-horizontal .countdown, #rolex-clock img, .grid-0-1 .col-3, .block-control {
+    height: 114px;/* content height */
+}
+
+/* Helper class: no border */
+.no-border {
+    border: medium none;
+}
+.border-all {
+    width: 296px;/* = contentWidth - 2* borderWidth */
+    height: 81px;/* = contentHeight - 2* borderWidth */
+    border: 0px solid #006039;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+/* Grid style */
+.grid, .content {
+    /*width: 100%;*/
+}
+.grid:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.grid .col {
+    float: left;
+    display: block;
+}
+.grid .col a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    z-index: 100;
+    cursor: pointer;
+}
+.grid .col-1 a, .grid .col-3 a {
+    width: 100%;
+}
+.col-1, .col-3 {
+    width: 0%;
+}
+.col-2 {
+    width: 100%;
+}
+/* que l'horloge */
+.grid-0-0 .col-1, .grid-0-0 .col-3 {
+    width: 0%;
+}
+.grid-0-0 .col-2 {
+    width: 100%;
+}
+/* time ‚Äö√†√∂‚Äö√Ñ‚Ä† gauche et a droite + clock */
+.grid-1-1 .col-1, .grid-1-1 .col-3 {
+    width: 30%;
+}
+.grid-1-1 .col-2 {
+    width: 40%;
+}
+/* clock + time a droite */
+.grid-0-1 .col-1 {
+    width: 0%;
+}
+.grid-0-1 .col-2 {
+    width: 64%;
+}
+.grid-0-1 .col-3 {
+    width: 36%;
+}
+/* clock + time ‚Äö√†√∂‚Äö√Ñ‚Ä† gauche */
+.grid-1-0 .col-1 {
+    width: 45%;
+}
+.grid-1-0 .col-2 {
+    width: 55%;
+}
+.grid-1-0 .col-3 {
+    width: 0%;
+}
+
+/* le tracker url */
+.tracker {
+    width: 100%;
+}
+.tracker-1 {
+    display: block;
+    float: left;
+    width: 0;
+    position: relative;
+}
+.tracker-2 {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.has-logo .tracker-1 {
+    width: 60%;
+}
+.has-logo .tracker-2 {
+    width: 40%;
+}
+
+.clock {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Logo */
+.no-logo .logo {
+    display: none;
+}
+
+.logo {
+    /*width: 74px;
+    height: 41px;
+    margin-top: -20.5px;
+    display: block;
+    position: relative;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+.retina .logo {
+    /* 148x82 */
+    background: url("images/logo/logo100_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.logo.logo-50 {
+    width: 37px;
+    height: 21px;
+    margin-top: -10.5px;
+    background: url("images/logo/logo50.png") no-repeat scroll 0 0 transparent;
+}
+.retina .logo.logo-50 {
+    /* 74x41 */
+    width: 37px;
+    height: 20.5px;
+    margin-top: -10.25px;
+    background: url("images/logo/logo50_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.logo.logo-60 {
+    width: 37px;
+    height: 21px;
+    margin-top: -10.5px;
+    background: url("images/logo/logo60.png") no-repeat scroll 0 0 transparent;
+}
+.retina .logo.logo-60 {
+    /* 89x49 */
+    width: 44.5px;
+    height: 24.5px;
+    margin-top: -12.25px;
+    background: url("images/logo/logo60_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.logo.logo-65 {
+    width: 48px;
+    height: 27px;
+    margin-top: -13.5px;
+    background: url("images/logo/logo65.png") no-repeat scroll 0 0 transparent;
+}
+.retina .logo.logo-65 {
+    /* 96x54 */
+    width: 48px;
+    height: 27px;
+    margin-top: -13.5px;
+    background: url("images/logo/logo65_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.logo.logo-70 {
+    width: 52px;
+    height: 29px;
+    margin-top: -14.5px;
+    background: url("images/logo/logo70.png") no-repeat scroll 0 0 transparent;
+}
+.retina .logo.logo-70 {
+    /* 104x57 */
+    width: 52px;
+    height: 28.5px;
+    margin-top: -14.25px;
+    background: url("images/logo/logo70_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.logo.logo-75 {
+    width: 56px;
+    height: 31px;
+    margin-top: -15.5px;
+    background: url("images/logo/logo75.png") no-repeat scroll 0 0 transparent;
+}
+.retina .logo.logo-75 {
+    /* 112x62 */
+    width: 56px;
+    height: 31px;
+    margin-top: -15.5px;
+    background: url("images/logo/logo75_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.logo.logo-80 {
+    width: 59px;
+    height: 33px;
+    margin-top: -16.5px;
+    background: url("images/logo/logo80.png") no-repeat scroll 0 0 transparent;
+}
+.retina .logo.logo-80 {
+    /* 118x66 */
+    width: 59px;
+    height: 33px;
+    margin-top: -16.5px;
+    background: url("images/logo/logo80_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.logo.logo-90 {
+    width: 67px;
+    height: 37px;
+    margin-top: -18.5px;
+    background: url("images/logo/logo90.png") no-repeat scroll 0 0 transparent;
+}
+.retina .logo.logo-90 {
+    /* 133x74 */
+    width: 66.5px;
+    height: 37px;
+    margin-top: -18.5px;
+    background: url("images/logo/logo90_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.logo.logo-100 {
+    width: 74px;
+    height: 41px;
+    margin-top: -20.5px;
+    background: url("images/logo/logo100.png") no-repeat scroll 0 0 transparent;
+}
+.retina .logo.logo-100 {
+    /* 148x82 */
+    width: 74px;
+    height: 37px;
+    margin-top: -20.5px;
+    background: url("images/logo/logo100_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.logo.logo-alt {
+    width: 98px;
+    height: 52px;
+    margin-top: -49px;
+    background: url("images/logo/logo.jpg") no-repeat scroll 0 0 transparent;
+}
+.retina .logo.logo-alt {
+    width: 98px;
+    height: 52px;
+    margin-top: -49px;
+    background: url("images/logo/logo_retina.jpg") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+/* City blocks */
+.block {
+    margin: 0;
+}
+.no-block .block-control {
+    display: none;
+}
+.block .glyph {
+    display: none;
+}
+.block a {
+    /* default color mode */
+    color: #FFF;
+}
+.block.active a {
+    /* active color mode */
+    color: #A37E2C;
+}
+.white .block a {
+    /* white mode */
+    color: white;
+}
+.white .block.active a {
+    /* active white mode */
+    font-weight: bold;
+}
+
+.active .glyph {
+    width: 8px;
+    display: block;
+}
+
+.block .btn .btn-inner {
+    position: relative;
+    display: block;
+    line-height: 15px;
+}
+.block .btn .glyph {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.block .city, .block .time {
+    display: block;
+    font-size: 11px;
+}
+
+/* Clocks */
+.clock-canvas {
+    display: block;
+    margin:0px;
+    padding:0px;
+    border:0;
+    z-index:50;
+    overflow: hidden;
+}
+
+.clock .clock-canvas {
+    background: url("images/clock/100.png") no-repeat scroll 0 0 transparent;
+    width: 90px;
+    height: 90px;
+    margin-top: -45px;
+    margin-right: -45px;
+    position:absolute;
+    top: 50%;
+    right: 50%;
+}
+.clock.clock-silver .clock-canvas {
+    background: url("images/clock/100_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock .clock-canvas {
+    /* 180 180 */
+    background: url("images/clock/100_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-silver .clock-canvas {
+    background: url("images/clock/100_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.clock.clock-60 .clock-canvas {
+    background: url("images/clock/60.png") no-repeat scroll 0 0 transparent;
+    width: 56px;
+    height: 56px;
+    margin-top: -28px;
+    margin-right: -28px;
+}
+.clock.clock-60.clock-silver .clock-canvas {
+    background: url("images/clock/60_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock.clock-60 .clock-canvas {
+    /* 112 112 */
+    background: url("images/clock/60_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-60.clock-silver .clock-canvas {
+    background: url("images/clock/60_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.clock.clock-65 .clock-canvas {
+    background: url("images/clock/65.png") no-repeat scroll 0 0 transparent;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-right: -30px;
+}
+.clock.clock-65.clock-silver .clock-canvas {
+    background: url("images/clock/65_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock.clock-65 .clock-canvas {
+    /* 120 120 */
+    background: url("images/clock/65_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-65.clock-silver .clock-canvas {
+    background: url("images/clock/65_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.clock.clock-70 .clock-canvas {
+    background: url("images/clock/70.png") no-repeat scroll 0 0 transparent;
+    width: 64px;
+    height: 64px;
+    margin-top: -32px;
+    margin-right: -32px;
+}
+.clock.clock-70.clock-silver .clock-canvas {
+    background: url("images/clock/70_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock.clock-70 .clock-canvas {
+    /* 128 128 */
+    background: url("images/clock/70_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-70.clock-silver .clock-canvas {
+    background: url("images/clock/70_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.clock.clock-75 .clock-canvas {
+    background: url("images/clock/75.png") no-repeat scroll 0 0 transparent;
+    width: 68px;
+    height: 68px;
+    margin-top: -34px;
+    margin-right: -34px;
+}
+.clock.clock-75.clock-silver .clock-canvas {
+    background: url("images/clock/75_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock.clock-75 .clock-canvas {
+    /* 136 136 */
+    background: url("images/clock/75_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-75.clock-silver .clock-canvas {
+    background: url("images/clock/75_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.clock.clock-80 .clock-canvas {
+    background: url("images/clock/80.png") no-repeat scroll 0 0 transparent;
+    width: 83px;
+    height: 83px;
+    margin-top: -36.5px;
+    margin-right: -36.5px;
+}
+.clock.clock-80.clock-silver .clock-canvas {
+    background: url("images/clock/80_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock.clock-80 .clock-canvas {
+    /* 146 146 */
+    background: url("images/clock/80_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-80.clock-silver .clock-canvas {
+    background: url("images/clock/80_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.clock.clock-90 .clock-canvas {
+    background: url("images/clock/90.png") no-repeat scroll 0 0 transparent;
+    width: 82px;
+    height: 82px;
+    margin-top: -41px;
+    margin-right: -41px;
+}
+.clock.clock-90.clock-silver .clock-canvas {
+    background: url("images/clock/90_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock.clock-90 .clock-canvas {
+    /* 164 164 */
+    background: url("images/clock/90_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-90.clock-silver .clock-canvas {
+    background: url("images/clock/90_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.clock.clock-100 .clock-canvas {
+    background: url("images/clock/100.png") no-repeat scroll 0 0 transparent;
+    width: 90px;
+    height: 90px;
+    margin-top: -45px;
+    margin-right: -45px;
+}
+.clock.clock-100.clock-silver .clock-canvas {
+    background: url("images/clock/100_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock.clock-100 .clock-canvas {
+    /* 180 180 */
+    background: url("images/clock/100_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-100.clock-silver .clock-canvas {
+    background: url("images/clock/100_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.clock.clock-110 .clock-canvas {
+    background: url("images/clock/110.png") no-repeat scroll 0 0 transparent;
+    width: 98px;
+    height: 98px;
+    margin-top: -49px;
+    margin-right: -49px;
+}
+.clock.clock-110.clock-silver .clock-canvas {
+    background: url("images/clock/110_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock.clock-110 .clock-canvas {
+    /* 196 196 */
+    background: url("images/clock/110_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-110.clock-silver .clock-canvas {
+    background: url("images/clock/110_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+.clock.clock-120 .clock-canvas {
+    background: url("images/clock/120.png") no-repeat scroll 0 0 transparent;
+    width: 107px;
+    height: 107px;
+    margin-top: -53.5px;
+    margin-right: -53.5px;
+}
+.clock.clock-120.clock-silver .clock-canvas {
+    background: url("images/clock/120_silver.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock.clock-120 .clock-canvas {
+    /* 214 214 */
+    background: url("images/clock/120_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+.retina .clock.clock-120.clock-silver .clock-canvas {
+    background: url("images/clock/120_retina_silver.png") no-repeat scroll 0 0 transparent;
+    background-size: 100% 100%;
+}
+
+/* static needles */
+.clock-needle {
+    position: absolute;
+    display: block;
+    width: 52px;
+    height: 54px;
+    top: 50%;
+    left: 50%;
+    background: url("images/needles/static/needles_100.png") no-repeat scroll 0 0 transparent;
+    margin-top: -17px;
+    margin-left: -23px;
+    background-size: 100%;
+    background-position: 50%;
+}
+.clock-needle.clock-needle-black {
+    background-image: url("images/needles/static/needles_100_black.png");
+}
+.retina .clock-needle {
+    background: url("images/needles/static/needles_100_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_100_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+.clock-60 .clock-needle {
+    width: 33px;
+    height: 34px;
+    margin-top: -9px;
+    margin-left: -15px;
+    background: url("images/needles/static/needles_60.png") no-repeat scroll 0 0 transparent;
+}
+.clock-60 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_60_black.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock-60 .clock-needle {
+    background: url("images/needles/static/needles_60_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-60 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_60_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+.clock-65 .clock-needle {
+    width: 35px;
+    height: 37px;
+    margin-top: -11px;
+    margin-left: -16px;
+    background: url("images/needles/static/needles_65.png") no-repeat scroll 0 0 transparent;
+}
+.clock-65 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_65_black.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock-65 .clock-needle {
+    background: url("images/needles/static/needles_65_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-65 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_65_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+.clock-70 .clock-needle {
+    width: 38px;
+    height: 40px;
+    margin-top: -12px;
+    margin-left: -17px;
+    background: url("images/needles/static/needles_70.png") no-repeat scroll 0 0 transparent;
+}
+.clock-70 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_70_black.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock-70 .clock-needle {
+    background: url("images/needles/static/needles_70_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-70 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_70_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+.clock-75 .clock-needle {
+    width: 40px;
+    height: 42px;
+    margin-top: -13px;
+    margin-left: -18px;
+    background: url("images/needles/static/needles_75.png") no-repeat scroll 0 0 transparent;
+}
+.clock-75 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_75_black.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock-75 .clock-needle {
+    background: url("images/needles/static/needles_75_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-75 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_75_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+.clock-80 .clock-needle {
+    width: 43px;
+    height: 44px;
+    margin-top: -13px;
+    margin-left: -19px;
+    background: url("images/needles/static/needles_80.png") no-repeat scroll 0 0 transparent;
+}
+.clock-80 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_80_black.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock-80 .clock-needle {
+    background: url("images/needles/static/needles_80_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-80 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_80_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+.clock-90 .clock-needle {
+    width: 47px;
+    height: 50px;
+    margin-top: -16px;
+    margin-left: -21px;
+    background: url("images/needles/static/needles_90.png") no-repeat scroll 0 0 transparent;
+}
+.clock-90 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_90_black.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock-90 .clock-needle {
+    background: url("images/needles/static/needles_90_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-90 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_90_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+.clock-100 .clock-needle {
+    width: 52px;
+    height: 54px;
+    margin-top: -17px;
+    margin-left: -23px;
+    background: url("images/needles/static/needles_100.png") no-repeat scroll 0 0 transparent;
+}
+.clock-100 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_100_black.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock-100 .clock-needle {
+    background: url("images/needles/static/needles_100_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-100 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_100_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+.clock-110 .clock-needle {
+    width: 56px;
+    height: 59px;
+    margin-top: -17px;
+    margin-left: -23px;
+    background: url("images/needles/static/needles_110.png") no-repeat scroll 0 0 transparent;
+}
+.clock-110 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_110_black.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock-110 .clock-needle {
+    background: url("images/needles/static/needles_110_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-110 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_110_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+.clock-120 .clock-needle {
+    width: 107px;
+    height: 107px;
+    margin-top: -3.34375em;
+    margin-left: -3.34375em;
+    background: url("images/needles/static/needles_120.png") no-repeat scroll 0 0 transparent;
+}
+.clock-120 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_120_black.png") no-repeat scroll 0 0 transparent;
+}
+.retina .clock-120 .clock-needle {
+    background: url("images/needles/static/needles_120_retina.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+.retina .clock-120 .clock-needle.clock-needle-black {
+    background: url("images/needles/static/needles_120_retina_black.png") no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+}
+
+/* focus gen */
+.focus-background, .focus-font-size, .focus-line-height {
+    background-color: rgba(52, 152, 219, 0.5);
+}
+
+.focus-margin {
+    background-color: rgba(52, 152, 219, 0.5);
+    position: relative;
+}
+
+/* override gen */
+.block .city, .block .time {
+    /*font-size: 0.69em;
+    line-height: 13px;*/
+}
+.block-control-horizontal .block .city {
+    padding-left: 34px;
+}
+.block-control-horizontal .block .time {
+    position: absolute;
+    top: 0px;
+}
+.block .btn .glyph {
+    font-size: 18px;
+    left: -10px;
+    top: -2px;
+}
+/* move all blocks */
+.block-control {
+    position: relative;
+    margin-left: 24px;
+}
+/* when block displayed inline */
+.block-control.block-inline {
+    position: absolute;
+    top: 102px;
+}
+.block-control.block-inline .block .city {
+    padding-left: 34px;
+}
+.block-control.block-inline .block .time {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.block-city {
+    position: absolute;
+    top: 26px;
+}
+.block-local {
+    position: absolute;
+    top: 62px;
+}
+.block .city {
+    white-space: nowrap;
+}
+.block .time {
+    position: relative;
+    top: 1px;
+}
+#logo {
+    left: 4px;
+    margin-top: 35px;
+    background: url("images/logo/logo100.png") no-repeat scroll 0 0 transparent;
+    width: 74px;
+    height: 41px;
+    /*margin-top: -20.5px;*/
+    display: block;
+    position: relative;
+    /*top: 50%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+#global_watch {
+    margin-right: -45px;
+    margin-top: -45px;
+}
+/* CountDown style */
+.countdown {
+    display: none;
+}
+.countdown-body {
+    height: 0px;
+    margin:0px;
+    padding: 0;
+    border: medium none;
+    position:absolute;
+    top: 100px;
+    width:100%;
+    z-index:60;
+    text-align: center;
+}
+
+.has-countdown .grid, .has-countdown .col, .has-countdown .tracker .tracker-1, .has-countdown .tracker .tracker-2 {
+    height: 100px;
+}
+.has-countdown .countdown {
+    display: block;
+}
+.has-countdown .countdown-body {
+    height: 45px;
+}
+.has-countdown.countdown-horizontal .grid {
+    float: left;
+    height: auto;
+    width: 40.75%;
+}
+.has-countdown.countdown-horizontal .countdown {
+    float: left;
+    left: -4px;
+    position: relative;
+    width: 59.25%;
+}
+.has-countdown.countdown-horizontal .countdown-body {
+    top: 50%;
+    margin-top: -21px;
+}
+.countdown-body a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding-top: 21px;
+    width: 100%;
+    height: 26px;
+}
+.hor-line {
+    background-color: #666666;
+    display: block;
+    height: 1px;
+    left: 1px;
+    margin: auto;
+    position: relative;
+    top: -1px;
+    width: 91%;
+}
+.countdown-text {
+    padding-bottom: 1px;
+    color: #909090;
+    font-size:9px;
+    margin:0 auto;
+    z-index:26;
+    text-align:center;
+    top: 5px;
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+.countdown-text .inner-text {
+    display: inline-block;
+    position: relative;
+}
+.countdown-text #racetext{
+    font-size: 8px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.countdown-time {
+    z-index:26;
+    text-align:center;
+    display: block;
+    left: -2px;
+    width: 100%;
+    position: absolute;
+    top: 17px;
+}
+.countdown-time ul {
+    list-style: none outside none;
+    margin: 0 0 0 1px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+
+}
+.countdown-time ul li {
+    border: 0 none;
+    color: #888888;
+    display: inline-block;
+    font-size: 10px;
+    left: 1px;
+    line-height: 16px;
+    margin: 3px auto 6px;
+    padding: 0 9px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+.countdown-time ul li:first-child span {
+    border-left: 0px solid white;
+}
+.countdown-time ul li span {
+    border-left: thin solid #666666;
+    display: block;
+    height: 6px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    width: 0;
+}
+.countdown-time .cd-hours span {
+}
+.countdown-time .cd-minutes span {
+}
+.countdown-time .cd-seconds span {
+}
+.arrow span {
+    display: none;
+}
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+.fallback {
+    display: none;
+}
+.fallback a {
+    margin:0px;
+    padding:0px;
+    border:0;
+    position:absolute;
+    display: block;
+    text-decoration:none;
+}
+/* when no CD */
+.no-countdown.countdown-horizontal #logo {
+    position: absolute;
+    right: 13px;
+    top: 45px;
+    left: auto;
+}
+.no-countdown.countdown-horizontal .clock-canvas {
+    left: 1px;
+}
+
+
+.no-countdown.countdown-horizontal .tracker .tracker-1, .no-countdown.countdown-horizontal .tracker .tracker-2 {
+    width: 50%;
+}
+
+
+/* vertical */
+.vertical .grid-0-1 .col-2, .vertical .grid-0-1 .col-3 {
+    width: 100%;
+}
+.vertical .grid-0-1 .col-2, .vertical .grid .col-2.no-logo .tracker .tracker-2 {
+    height: 102px;
+}
+.vertical .grid-0-1 .col-3 {
+    height: 58px;/* contentHeight - 102px */
+}
+
+.vertical .grid-0-1 .col-2 .tracker .tracker-1, .vertical .grid-0-1 .col-2 .tracker .tracker-2 {
+    width: 100%;
+}
+.vertical .grid-0-1 .col-2 .tracker .tracker-1 {
+    height: 72px;
+}
+.vertical .grid-0-1 .col-2 .tracker .tracker-2 {
+    height: 92px;
+}
+
+.vertical .grid .col-2.no-logo .tracker .tracker-1 {
+    height: 0;
+}
+
+/*
+Logo at right column.
+Default to hidden.
+Insert ".has-logo" in ".col" element
+*/
+.grid .col .logo-control {
+    display: none;
+}
+.grid .col.has-logo .logo-control {
+    display: block;
+    width: 100%;
+    height: 54px;
+    float: left;
+}
+.has-logo .block-control {
+    height: 50px;
+    top: 54px;
+}
+#logo-right {
+    left: -2px;
+    margin-top: -12px;
+}

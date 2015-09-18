@@ -1,0 +1,74 @@
+<T3DataStructure>
+ <meta>
+       <langDisable>1</langDisable>
+ </meta>
+ <sheets>
+  <sDEF>
+   <ROOT>
+    <TCEforms>
+     <sheetTitle>LLL:EXT:denned_content/Resources/Private/Language/locallang_db.xlf:tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet1</sheetTitle>
+    </TCEforms>
+    <type>array</type>
+     <el>
+     <settings.cadrebloc>
+     	<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:denned_content/Resources/Private/Language/locallang_db.xlf:tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet1_label_bloc_cadre</label>
+			<config>
+				<type>select</type>
+				<size>1</size>
+				<maxitems>1</maxitems>
+				<items type="array">
+					<numIndex index="0" type="array">
+			          <numIndex index="0">Générique</numIndex>
+			          <numIndex index="1">0</numIndex>
+			        </numIndex>
+			        <numIndex index="1" type="array">
+			          <numIndex index="0">Facebook</numIndex>
+			          <numIndex index="1">1</numIndex>
+			        </numIndex>
+			        <numIndex index="2" type="array">
+			          <numIndex index="0">Twitter</numIndex>
+			          <numIndex index="1">2</numIndex>
+			        </numIndex>
+				</items>
+			</config>
+		</TCEforms>
+     </settings.cadrebloc>
+     <settings.image>
+     	<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:denned_content/Resources/Private/Language/locallang_db.xlf:tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet1_label_image</label>
+			<config>
+				<type>group</type>
+				<internal_type>file</internal_type>
+				<allowed>jpeg, jpg, gif, png</allowed>
+				<maxitems>1</maxitems>
+				<minitems>1</minitems>
+				<show_thumbs>1</show_thumbs>
+			</config>
+		</TCEforms>
+     </settings.image>
+     <settings.link>
+     	<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:denned_content/Resources/Private/Language/locallang_db.xlf:tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_label_link</label>
+			<config>
+				<type>input</type>
+				<wizards>
+					<link>
+						<type>popup</type>
+						<title>Lien</title>
+						<icon>link_popup.gif</icon>
+						<script>browse_links.php?mode=wizard</script>
+						<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+					</link>
+				</wizards>
+			</config>
+		</TCEforms>
+     </settings.link>
+     </el>
+    </ROOT>
+   </sDEF>
+   </sheets>
+</T3DataStructure>
