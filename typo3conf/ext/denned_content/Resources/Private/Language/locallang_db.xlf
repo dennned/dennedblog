@@ -13,7 +13,7 @@
 			</trans-unit>
 
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_name">
-				<source>[Denned] Presentation bloc home page</source>
+				<source>[Denned] Slider</source>
 			</trans-unit>
 
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_description">

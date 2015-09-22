@@ -49,6 +49,8 @@ class BlocController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 	 */
 	public function blocHomePageAction() {
 		
+		//die('TEST');
+		
 		$startLeft = $this->settings['datedebutblocgauche'];
 		$endLeft = $this->settings['datefinblocgauche'];
 		$startCentral = $this->settings['datedebutbloccentral'];
@@ -65,9 +67,9 @@ class BlocController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 			$hightlightArray = $this->getHightLight();
 		}
 		
-		echo "<pre>";
+		/*echo "<pre>";
 		var_dump($hightlightArray);
-		echo "</pre>";
+		echo "</pre>";*/
 		//die('eeeRT');
 		
 		$this->view->assignMultiple(array(
