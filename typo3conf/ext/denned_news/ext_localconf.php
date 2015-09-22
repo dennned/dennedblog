@@ -17,7 +17,7 @@ if (!defined('TYPO3_MODE')) {
 		'News' => 'listLastNewsHomePage',
 		'News' => 'listNewsFilter',
 		'News' => 'listNewsNonFilter',
-		//'News' => 'alaUne',
+		'News' => 'alaUne',
 	)
 );
 

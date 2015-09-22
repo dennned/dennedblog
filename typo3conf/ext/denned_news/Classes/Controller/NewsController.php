@@ -142,9 +142,16 @@ class Tx_DennedNews_Controller_NewsController extends Tx_News_Controller_NewsCon
 		));
 
 	}
-
+	
+	/**
+	 * Output a list view of news
+	 *
+	 * @param $overwriteDemand test
+	 * @return void
+	 */
 	public function listAction(array $overwriteDemand = NULL){
 
+		
 		$arrayFilter = array();
 		$choiseUser = array();
 		$selectFilter = array();
