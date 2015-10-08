@@ -13,15 +13,17 @@ plugin.tx_dennedcontent {
 	}
 
 	settings{
-		uidPageMobile = 64
+		uidPageNews = 3
 		widthMaxBlocGeneric = 270
 		heightMaxBlocGeneric = 148
 		widthMaxBlocGenericHome = 290
 		heightMaxBlocGenericHome = 232
 		widthMaxBlocSociaux = 270
 		heightMaxBlocSociaux = 148
-		uidDetailNews = 133
+		uidDetailNews = 7
 		uidCategory = 14
 		limitHomeNews = 5
+		widthMaxBlocHome = 270
+		heightMaxBlocHome = 537
 	}
 }

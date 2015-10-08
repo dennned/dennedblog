@@ -17,10 +17,16 @@
 			</trans-unit>
 
 			<trans-unit id="tx_dennedcontent_domain_model_watchjs">
-				<source>watch.js</source>
+				<source>watch</source>
 			</trans-unit>
-
-
+			
+			<trans-unit id="tx_dennedcontent_domain_model_link">
+				<source>А что дальше ? Читать ...</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennedcontent_domain_model_not_news">
+				<source>Упс... пост пропал! Смотри другие посты! Нажимай сюда</source>
+			</trans-unit>
 
 		</body>
 	</file>

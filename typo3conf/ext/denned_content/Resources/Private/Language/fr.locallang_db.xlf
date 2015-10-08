@@ -55,6 +55,10 @@
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_libelle">
 				<target>Libellé</target>
 			</trans-unit>
+			
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_actu">
+				<source>News selected</source>
+			</trans-unit>
 
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2">
 				<target>Bloc avant</target>

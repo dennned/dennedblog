@@ -19,6 +19,10 @@
 			<trans-unit id="tx_dennedcontent_domain_model_watchjs">
 				<target>watch_fr.js</target>
 			</trans-unit>
+			
+			<trans-unit id="tx_dennedcontent_domain_model_link">
+				<source>More Fr</source>
+			</trans-unit>
 
 		</body>
 	</file>

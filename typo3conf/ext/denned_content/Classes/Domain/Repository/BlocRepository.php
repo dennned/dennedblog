@@ -24,6 +24,8 @@ namespace TYPO3\DennedContent\Domain\Repository;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+
 /**
  *
  *
@@ -37,5 +39,28 @@ class BlocRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 	 * The findAllCountries method
 	 * @return object $results list of countries
 	 */
+	public function findByUidNews($listUids, $respectEnableFields = TRUE){
+		
+		// uids news
+		$uidList = GeneralUtility::intExplode(',', $listUids, TRUE);
+		//\TYPO3\CMS\Core\Utility\DebugUtility::debug($uidList, 'SQL');
+		
+		$query = $this->createQuery();
+		$query->getQuerySettings()->setRespectStoragePage(FALSE);
+		$query->getQuerySettings()->setRespectSysLanguage(FALSE);
+		$query->getQuerySettings()->setIgnoreEnableFields(!$respectEnableFields);
+		
+		$constraints = array();
+		foreach ($uidList as $uid) {
+			$constraints[] = $query->equals('uid', $uid);
+		}
+		
+		return $query->matching(
+				$query->logicalAnd(
+						$query->logicalOr($constraints),
+						$query->equals('deleted', 0),
+						$query->equals('hidden', 0)
+				))->execute();
+	}
 }
 ?>

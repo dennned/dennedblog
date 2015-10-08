@@ -1,28 +1,60 @@
-<script type="text/javascript">
-	jQuery(document).ready(function(){
-		jQuery('.bxslider').bxSlider({
-			auto:true
-		});
-	});
-</script>
-	
-<ul class="bxslider">
-  <li>
-  	<img src="/fileadmin/templates/images/img1.jpg" />
-  	<div>
-  		<h2>TEST BLOCK 1 TEST BLOCK 1 TEST BLOCK 1 TEST BLOCK 1 TEST BLOCK 1 TEST BLOCK 1 TEST BLOCK 1</h2>
-  		<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus</p>
-  		<a href="/">LINK MORE</a>		  	
-  	</div>
-  </li>
-  <li>
-  	<img src="/fileadmin/templates/images/img2.jpg" />
-  	<div>
-  		<h2>TEST BLOCK 2</h2>
-  		<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus</p>
-  		<a href="/">LINK MORE</a>		  	
-  	</div>
-  </li>
-  <li><img src="/fileadmin/templates/images/img3.jpg" /></li>
-  <li><img src="/fileadmin/templates/images/img4.jpg" /></li>
-</ul>
+<f:if condition="{slides}">
+	<f:then>
+		<script type="text/javascript">
+			jQuery(document).ready(function(){
+				jQuery('.bxslider').bxSlider({
+					auto:true
+				});
+			});
+		</script>
+		
+		<ul class="bxslider">
+			<f:for each="{data}" as="slide" key="label">
+				
+				<li>
+					<f:if condition="{slide.media}">
+						<f:then>
+							<f:for each="{slide.media}" as="media" key="img">
+								<f:if condition="{media.sorting}=='1'">
+									<f:image src="uploads/tx_news/{media.image}"  alt="{slide.title}" height="{settings.heightMaxBlocHome}c" />
+								</f:if>
+							</f:for>
+						</f:then>
+					    <f:else>
+					    	<img src="/fileadmin/templates/images/img1.jpg" />
+					    </f:else>
+						
+					</f:if>
+				  	
+				  	<div>
+				  		<h2>
+				  			<f:link.action extensionName="news" action="detail" arguments="{news:slide.uid}" controller="News" pageUid="{settings.uidDetailNews}">
+				  				<f:format.crop maxCharacters="100" append="&nbsp;...">{slide.title}</f:format.crop>
+				  			</f:link.action>
+				  		</h2>
+				  		
+				  		<p><f:format.crop maxCharacters="150" append="&nbsp;[...]">{slide.teaser}</f:format.crop></p>
+				  		
+				  		
+				  		<f:link.action class="link_news" extensionName="news" action="detail" arguments="{news:slide.uid}" controller="News" pageUid="{settings.uidDetailNews}"> 
+				  			<f:translate key="tx_dennedcontent_domain_model_link"/> 
+				  		</f:link.action>
+				  		
+				  			  	
+				  	</div>
+				</li>
+				
+			</f:for>
+		</ul>
+		
+    </f:then>
+    <f:else>
+    	<div class="not_news">
+	    	<h1>
+	    		<f:link.action pageUid="{settings.uidPageNews}"> 
+		  			<f:translate key="tx_dennedcontent_domain_model_not_news"/>  
+		  		</f:link.action>
+	    	</h1>
+    	</div>
+    </f:else>
+</f:if>

@@ -29,7 +29,7 @@
 			</trans-unit>
 
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1">
-				<source>Display during</source>
+				<source>Config Slider</source>
 			</trans-unit>
 
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_start_date">
@@ -55,7 +55,11 @@
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_libelle">
 				<source>Label</source>
 			</trans-unit>
-
+			
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_actu">
+				<source>News selected</source>
+			</trans-unit>
+			
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2">
 				<source>Display before</source>
 			</trans-unit>

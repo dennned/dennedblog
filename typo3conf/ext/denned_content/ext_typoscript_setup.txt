@@ -4,7 +4,7 @@ config.tx_extbase{
 
             TYPO3\DennedContent\Domain\Model\Bloc {
                 mapping {
-                    tableName = tt_content
+                    tableName = tx_news_domain_model_news
                 }
             }
 

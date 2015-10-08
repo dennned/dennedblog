@@ -13,7 +13,7 @@ plugin.tx_dennedcontent {
 	}
 
 	settings{
-		uidPageMobile ={$plugin.tx_dennedcontent.settings.uidPageMobile}
+		uidPageNews ={$plugin.tx_dennedcontent.settings.uidPageNews}
 		widthMaxBlocGeneric = {$plugin.tx_dennedcontent.settings.widthMaxBlocGeneric}
 		heightMaxBlocGeneric = {$plugin.tx_dennedcontent.settings.heightMaxBlocGeneric}
 		widthMaxBlocGenericHome = {$plugin.tx_dennedcontent.settings.widthMaxBlocGenericHome}
@@ -23,6 +23,8 @@ plugin.tx_dennedcontent {
 		uidDetailNews = {$plugin.tx_dennedcontent.settings.uidDetailNews}
 		uidCategory = {$plugin.tx_dennedcontent.settings.uidCategory}
 		limitHomeNews = {$plugin.tx_dennedcontent.settings.limitHomeNews}
+		widthMaxBlocHome = {$plugin.tx_dennedcontent.settings.widthMaxBlocHome}
+		heightMaxBlocHome = {$plugin.tx_dennedcontent.settings.heightMaxBlocHome}
 	}
 }
 

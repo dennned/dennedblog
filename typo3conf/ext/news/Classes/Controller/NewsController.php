@@ -25,13 +25,13 @@ use \TYPO3\CMS\Core\Utility\GeneralUtility;
  * @subpackage tx_news
  */
 class NewsController extends NewsBaseController {
-
+	
 	const SIGNAL_NEWS_LIST_ACTION = 'listAction';
 	const SIGNAL_NEWS_DETAIL_ACTION = 'detailAction';
 	const SIGNAL_NEWS_DATEMENU_ACTION = 'dateMenuAction';
 	const SIGNAL_NEWS_SEARCHFORM_ACTION = 'searchFormAction';
 	const SIGNAL_NEWS_SEARCHRESULT_ACTION = 'searchResultAction';
-
+	
 	/**
 	 * @var \GeorgRinger\News\Domain\Repository\NewsRepository
 	 */

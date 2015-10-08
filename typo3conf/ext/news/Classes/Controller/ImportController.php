@@ -122,4 +122,5 @@ class ImportController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 	protected function getResourceFactory() {
 		return ResourceFactory::getInstance();
 	}
+	
 }
