@@ -63,6 +63,19 @@ class BlocController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 		
 	}
 	
+	/**
+	 * action blocLinkImage
+	 *
+	 * @return void
+	 */
+	public function blocLinkImageAction() {
+	
+		$this->view->assignMultiple(array(
+				'isBlock'	=> true,
+		));
+	
+	}
+	
 	/*private function getNewsData($actu) {
 	
 		$select = 'uid, title, type, short, bodytext, archivedate, image, tx_edpnews_image_alaune, imagealttext, datetime';
@@ -92,34 +105,6 @@ class BlocController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 		return false;
 	}*/
 
-
-	/**
-	 * action blocLinkImage
-	 *
-	 * @return void
-	 */
-	/*public function blocLinkImageAction() {
-		
-		$this->contentObj = $this->configurationManager->getContentObject();
-
-		$bloc = $this->blocRepository->findByUid($this->contentObj->data['uid']);
-
-		$link = $this->settings['link'];
-
-		if(intval($link)){
-			$linkRight = 1;
-		} else {
-			$linkRight = 0;
-		}
-
-		$this->view->assignMultiple(array(
-			'linkright' 		=> $linkRight,
-			'bloc' 				=> $bloc,
-			'position'			=> $this->contentObj->data['colPos']
-		));
-
-
-	}*/
 
 	/**
 	 * get home news

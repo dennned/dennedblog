@@ -1,74 +1,65 @@
-<f:if condition="{position} == 2">
+<f:if condition="{isBlock}">
 	<f:then>
-		<f:if condition="{settings.cadrebloc} == 0">
-			<div class="block-img-link">
-				<f:if condition="{linkright} == 0">
-					<f:then>
-							<f:link.external uri="{settings.link}" target="_blank">
-								<f:image src="{settings.image}" width="{settings.widthMaxBlocGeneric}c" height="{settings.heightMaxBlocGeneric}c" alt="" />
-								<p>{bloc.header}</p>
-								<span class="bar-rose icon-right-open-1"></span>
-							</f:link.external>
-					</f:then>
-					<f:else>
-							<f:link.page pageUid="{settings.link}" target="_blank">
-								<f:image src="{settings.image}" width="{settings.widthMaxBlocGeneric}c" height="{settings.heightMaxBlocGeneric}c" alt="" />
-								<p>{bloc.header}</p>
-								<span class="bar-rose icon-right-open-1"></span>
-							</f:link.page>
-					</f:else>
-				</f:if>
-			</div>
-		</f:if>
+		<section id="intro" class="container">
+        <div class="row">
+          <div class="4u 12u(mobile)">
+            <section class="first">
+              <i class="icon featured fa-cog"></i>
+              
+              <header>
+                <h2>{settings.name1}</h2>
+              </header>
+              
+              <footer>
+                <ul class="actions">
+                  <li><f:link.page pageUid="{settings.link1}" class="button alt big" title="{settings.linktext1}">{settings.linktext1}</f:link.page></li>
+                </ul>
+              </footer>
+              
+            </section>
+          </div>
+          <div class="4u 12u(mobile)">
+            <section class="middle">
+              <i class="icon featured alt fa-flash"></i>
+              
+              <header>
+                <h2>{settings.name2}</h2>
+              </header>
+              
+              <footer>
+                <ul class="actions">
+                  <li><f:link.page pageUid="{settings.link2}" class="button big" title="{settings.linktext2}">{settings.linktext2}</f:link.page></li>
+                </ul>
+              </footer>
+              
+            </section>
+          </div>
+          <div class="4u 12u(mobile)">
+            <section class="last">
+              <i class="icon featured alt2 fa-star"></i>
+              
+              <header>
+                <h2>{settings.name3}</h2>
+              </header>
+              
+              <footer>
+                <ul class="actions">
+                  <li><f:link.page pageUid="{settings.link3}" class="button alt big" title="{settings.linktext3}">{settings.linktext3}</f:link.page></li>
+                </ul>
+              </footer>
+              
+            </section>
+          </div>
+        </div>
+      </section>
 	</f:then>
-</f:if>
-
-<f:if condition="{position} == 2">
-	<f:then>
-		<f:if condition="{settings.cadrebloc} == 1">
-			<div class="block-social block-facebook">
-				<f:if condition="{linkright} == 0">
-					<f:then>
-						<f:link.external uri="{settings.link}" target="_blank">
-							<f:image src="{settings.image}" width="{settings.widthMaxBlocSociaux}c" height="{settings.heightMaxBlocSociaux}c" alt="" />
-							<p>{bloc.header}</p>
-							<span class="bar-rose"></span>
-						</f:link.external>
-					</f:then>
-					<f:else>
-						<f:link.page pageUid="{settings.link}" target="_blank">
-							<f:image src="{settings.image}" width="{settings.widthMaxBlocSociaux}c" height="{settings.heightMaxBlocSociaux}c" alt="" />
-							<p>{bloc.header}</p>
-							<span class="bar-rose"></span>
-						</f:link.page>
-					</f:else>
-				</f:if>
-			</div>
-		</f:if>
-	</f:then>
-</f:if>
-
-<f:if condition="{position} == 2">
-	<f:then>
-		<f:if condition="{settings.cadrebloc} == 2">
-			<div class="block-social block-twitter">
-				<f:if condition="{linkright} == 0">
-					<f:then>
-						<f:link.external uri="{settings.link}" target="_blank">
-							<f:image src="{settings.image}" width="{settings.widthMaxBlocSociaux}c" height="{settings.heightMaxBlocSociaux}c" alt="" />
-							<p>{bloc.header}</p>
-							<span class="bar-rose"></span>
-						</f:link.external>
-					</f:then>
-					<f:else>
-						<f:link.page pageUid="{settings.link}" target="_blank">
-							<f:image src="{settings.image}" width="{settings.widthMaxBlocSociaux}c" height="{settings.heightMaxBlocSociaux}c" alt="" />
-							<p>{bloc.header}</p>
-							<span class="bar-rose"></span>
-						</f:link.page>
-					</f:else>
-				</f:if>
-			</div>
-		</f:if>
-	</f:then>
+	<f:else>
+		<div class="not_news">
+	    	<h1>
+	    		<f:link.action pageUid="{settings.uidPageNews}"> 
+		  			<f:translate key="tx_dennedcontent_domain_model_not_news"/>  
+		  		</f:link.action>
+	    	</h1>
+    	</div>
+	</f:else>
 </f:if>

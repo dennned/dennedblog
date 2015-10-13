@@ -31,6 +31,14 @@
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1">
 				<target>Bloc pendant</target>
 			</trans-unit>
+			
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet2">
+				<source>Trip</source>
+			</trans-unit>
+			
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet3">
+				<source>About</source>
+			</trans-unit>
 
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_start_date">
 				<target>Date de début</target>
@@ -104,38 +112,42 @@
 				<target>Lien</target>
 			</trans-unit>
 
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_hightlight">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_hightlight">
 				<target>Highlight</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet3_bloc_hightlight">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet3_bloc_hightlight">
 				<target>Affichage Highlight</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet3_bloc_displayblocnews">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet3_bloc_displayblocnews">
 				<target>Affichage Bloc News</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_libellelienactu">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_libellelienactu">
 				<target>Libellé actus</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_linkactu">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_linkactu">
 				<target>Lien actus</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_libellelienbillet">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_libellelienbillet">
 				<target>Libellé billet</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_linkbillet">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_linkbillet">
 				<target>Lien billet</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_imagebillet">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_imagebillet">
 				<target>Image billet</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_libellelienboutique">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_libellelienboutique">
 				<target>Libellé boutique</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_linkboutique">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_linkboutique">
 				<target>Lien boutique</target>
 			</trans-unit>
-<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_imageboutique">
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet2_imageboutique">
 				<target>Image boutique</target>
+			</trans-unit>
+			
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet1_label_linktext">
+				<source>Label link</source>
 			</trans-unit>
 
 
