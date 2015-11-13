@@ -16,7 +16,7 @@ plugin.tx_dennednews{
 	settings{
 		list{
 			news {
-				uidDetailArticle = 64
+				uidDetailArticle = 641111
 				uidDetailPhotos = 65
 				uidDetailVideos = 66
 				categoryArticle = 2
@@ -24,8 +24,10 @@ plugin.tx_dennednews{
 				categoryVideo = 4
 				catAlaUne = 3
 				limitAlaUne = 1
+				uidPageNewsHome = 1
 			}
 		}
+		
 
 	}
 }
@@ -52,7 +54,7 @@ plugin.tx_news {
 
     	pageListeNewArticle = 9
     	pageListeNewMedia = 8
-    	heightMaxBlocAlaUne = 200
+    	heightMaxBlocAlaUne = 250
     	widthMaxBlocAlaUne = 350
 
     	widthMaxBlocAlaUneGrande = 808
@@ -92,7 +94,7 @@ plugin.tx_news {
 			}
 
 			news {
-				uidDetailArticle = 64
+				uidDetailArticle = 7
 				uidDetailPhotos = 65
 				uidDetailVideos = 66
 				categoryArticle = 2
@@ -102,6 +104,8 @@ plugin.tx_news {
 				categoryImageMedia = 11
 				categoryVideoMedia = 12
 				categoryDocMedia = 10
+				
+				uidPageNewsHome = 2
 
 
 				mobile{

@@ -168,7 +168,14 @@
 			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownloadVideo">
 				<source>See video</source>
 			</trans-unit>
-
+			
+			<trans-unit id="tx_dennednews_domain_model_news.notdata">
+				<source>Упс... пост пропал! Смотри другие посты! Нажимай сюда</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.readNews">
+				<source>Читать</source>
+			</trans-unit>
 
 
 

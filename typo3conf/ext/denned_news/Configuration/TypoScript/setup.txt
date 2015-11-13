@@ -43,6 +43,7 @@ plugin.tx_dennednews{
 				uidDetailVideos = {$plugin.tx_dennednews.settings.list.news.uidDetailVideos}
 				catAlaUne = {$plugin.tx_dennednews.settings.list.news.catAlaUne}
 				limitAlaUne = {$plugin.tx_dennednews.settings.list.news.limitAlaUne}
+				uidPageNewsHome = {$plugin.tx_dennednews.settings.list.news.uidPageNewsHome}
 			}
 		}
 	}
@@ -121,6 +122,8 @@ plugin.tx_news {
 				categoryImageMedia = {$plugin.tx_news.settings.list.news.categoryImageMedia}
 				categoryVideoMedia = {$plugin.tx_news.settings.list.news.categoryVideoMedia}
 				categoryDocMedia = {$plugin.tx_news.settings.list.news.categoryDocMedia}
+				
+				uidPageNewsHome = {$plugin.tx_news.settings.list.news.uidPageNewsHome}
 
 				mobile{
 					pageListNews = {$plugin.tx_news.settings.list.news.mobile.pageListNews}

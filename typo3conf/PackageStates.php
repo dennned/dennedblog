@@ -495,10 +495,19 @@ return array (
       array (
       ),
     ),
-    'evian_news' => 
+    'denned_news' => 
     array (
       'state' => 'active',
-      'packagePath' => 'typo3conf/ext/evian_news/',
+      'packagePath' => 'typo3conf/ext/denned_news/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'denned_content' => 
+    array (
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/denned_content/',
       'classesPath' => 'Classes/',
       'suggestions' => 
       array (
@@ -576,15 +585,6 @@ return array (
       'composerName' => 'typo3/cms-linkvalidator',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/linkvalidator/',
-      'classesPath' => 'Classes/',
-      'suggestions' => 
-      array (
-      ),
-    ),
-    'news_extended' => 
-    array (
-      'state' => 'inactive',
-      'packagePath' => 'typo3conf/ext/news_extended/',
       'classesPath' => 'Classes/',
       'suggestions' => 
       array (
