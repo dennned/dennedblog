@@ -1,0 +1,207 @@
+{namespace n=Tx_News_ViewHelpers}
+
+
+<f:section name="content">
+	<f:if condition="{settings.templateLayout} == 1">
+		<f:then>
+			<f:if condition="{news}">
+				<f:then>
+					<div class="aside-block-item">
+						<h2><f:translate key="LLL:EXT:evian_news/Resources/Private/Language/locallang.xlf:tx_eviannews_domain_model_news.title_block_last_news" /></h2>
+					</div>
+					<ul class="nav-additional">
+						<f:for each="{news}" as="newsItem">
+							<f:render partial="List/ItemLastNews" arguments="{newsItem: newsItem, settings:settings}" />
+						</f:for>
+					</ul>
+				</f:then>
+			</f:if>
+		</f:then>
+		<f:else>
+			<f:if condition="{settings.templateLayout} == 2">
+				<f:then>
+					<div class="actu clearfix">
+						<h2><f:translate key="LLL:EXT:evian_news/Resources/Private/Language/locallang.xlf:tx_eviannews_domain_model_news.mobile.title_last_news" /></h2>
+						<f:image src="fileadmin/templatesmobile/img/background.jpg"
+								 alt="{f:translate(key: 'LLL:EXT:evian_news/Resources/Private/Language/locallang.xlf:tx_eviannews_domain_model_news.mobile.title_last_news')}"
+								 class="visuel"
+						/>
+					</div>
+					<div class="list_actu clearfix">
+						<ul>
+							<f:for each="{news}" as="newsItem">
+								<f:render partial="List/Mobile/ItemLastNews" arguments="{newsItem: newsItem, settings:settings}" />
+							</f:for>
+						</ul>
+					</div>
+					<div class="link_actu clearfix">
+					
+					
+						<f:link.page pageUid="{settings.list.news.mobile.pageListNews}">
+							<f:translate key="LLL:EXT:denned_news/Resources/Private/Language/locallang.xlf:tx_eviannews_domain_model_news.mobile.title_link_all_news" />
+						</f:link.page>
+					</div>
+					<div class="clearfix"></div>
+				</f:then>
+			</f:if>
+		</f:else>
+	</f:if>
+</f:section>
+
+
+<f:debug>{news}</f:debug>
+
+
+<f:if condition="{news}">
+	<f:then>
+		<div class="row">
+      <div class="12u">
+
+        <!-- Portfolio -->
+          <section>
+            <header class="major">
+              <h2>{blockTitle}</h2>
+            </header>
+            <div class="row posts_blog">
+            
+            	<f:for each="{news}" as="newsItem" key="number" iteration="itemIteration">
+            		
+            		
+            		<f:if condition="{itemIteration.isFirst}">
+            			<f:then>
+            				<div class="6u 12u(mobile)">
+            			</f:then>
+            			<f:else>
+            				<f:if condition="{number} == 1">
+            					<f:then>
+            						<div class="6u 12u(mobile)">
+            					</f:then>
+            					<f:else>
+            						<div class="4u 12u(mobile)">
+            					</f:else>
+            				</f:if>
+            			</f:else>
+            		</f:if>
+            		
+            		
+            		
+	                <section class="box">
+	                	<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" class="image featured" title="{newsItem.title}">
+				  			<f:if condition="{newsItem.media}">
+								<f:then>
+									<f:for each="{newsItem.media}" as="media" key="img">
+										<f:if condition="{media.sorting}=='1'">
+											<f:image src="uploads/tx_news/{media.image}"  alt="{newsItem.title}" height="{settings.heightMaxBlocAlaUne}c" />
+										</f:if>
+									</f:for>
+								</f:then>
+							    <f:else>
+							    	<img src="/fileadmin/templates/images/pic02.jpg" />
+							    </f:else>
+							</f:if>
+				  		</f:link.action>
+		                  
+		                  <header>
+		                    <h3>
+		                    	<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" title="{newsItem.title}">
+		                    		<f:format.crop maxCharacters="100" append="&nbsp;...">{newsItem.title}</f:format.crop>
+		                    	</f:link.action>
+		                    </h3>
+		                    <div class="datecat">
+		                    	<span><f:format.date format="d/m/Y">{newsItem.datetime}</f:format.date></span> 
+		                    	<f:if condition="{newsItem.categories}">
+									<f:then>
+										<f:for each="{newsItem.categories}" as="categorie" key="img" iteration="itera">
+											<f:if condition="{itera.isFirst}">
+												<span class="right categorie">{categorie.title}</span>
+											</f:if>
+										</f:for>
+									</f:then>
+								    <f:else>
+								    	<span class="right categorie">НЕТ КАТЕГОРИИ</span>
+								    </f:else>
+								</f:if>
+		                    	
+		                    </div>
+		                  </header>
+		                  
+		                  
+		                  
+		                  <f:if condition="{number} > 1">
+				               <f:then>
+		            		   		<p><f:format.crop maxCharacters="100" append="&nbsp;...">{newsItem.teaser}</f:format.crop></p>
+		            		   </f:then>
+		            	       <f:else>
+		            	       		<p><f:format.crop maxCharacters="250" append="&nbsp;...">{newsItem.teaser}</f:format.crop></p>
+		            	       </f:else>
+		                  </f:if>
+		                  
+		                  
+		                  <footer>
+		                    
+		                    <f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" title="{newsItem.title}" class="button alt">
+	                    		<f:translate key="LLL:EXT:denned_news/Resources/Private/Language/locallang.xlf:tx_dennednews_domain_model_news.readNews" />
+	                    	</f:link.action>
+		                    
+		                    
+		                  </footer>
+		                </section>
+		           </div>
+            		
+            		
+            		
+            	</f:for>
+            
+              
+              
+              
+              
+              
+              
+              
+              
+            </div>
+            
+            
+          </section>
+
+      </div>
+    </div>
+    
+    <script>
+    jQuery(function() {
+      var wall = new freewall(".posts_blog");
+      wall.fitWidth();
+    });
+	</script>
+    
+	</f:then>
+	<f:else>
+		<div class="not_news">
+	    	<h1>
+	    		<f:link.page pageUid="{uidPageHome}"> 
+		  			<f:translate key="LLL:EXT:denned_news/Resources/Private/Language/locallang.xlf:tx_dennednews_domain_model_news.notdata" />
+		  		</f:link.page>
+	    	</h1>
+    	</div>
+	</f:else>
+</f:if>
+
+
+<ul class="list-news">
+							<f:if condition="{settings.hidePagination}">
+								<f:then>
+									<f:for each="{news}" as="newsItem">
+										<f:render partial="List/Item" arguments="{newsItem: newsItem, settings:settings}" />
+									</f:for>
+								</f:then>
+								<f:else>
+									<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}">
+										<f:for each="{paginatedNews}" as="newsItem">
+											<f:render partial="List/Item" arguments="{newsItem: newsItem, settings:settings}" />
+										</f:for>
+									</n:widget.paginate>
+								</f:else>
+							</f:if>
+						</ul>
+
