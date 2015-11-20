@@ -1,0 +1,74 @@
+<f:debug>{{itemIteration}}</f:debug>
+
+<f:if condition="{itemIteration.isFirst}">
+	<f:then>
+    	<div class="6u 12u(mobile)">
+    </f:then>
+    <f:else>
+		<f:if condition="{number} == 1">
+			<f:then>
+				<div class="6u 12u(mobile)">
+			</f:then>
+			<f:else>
+				<div class="4u 12u(mobile)">
+			</f:else>
+		</f:if>
+	</f:else>
+</f:if>
+            		
+	<section class="box">
+		<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" class="image featured" title="{newsItem.title}">
+			<f:if condition="{newsItem.media}">
+				<f:then>
+					<f:for each="{newsItem.media}" as="media" key="img">
+						<f:if condition="{media.sorting}=='1'">
+							<f:image src="uploads/tx_news/{media.image}"  alt="{newsItem.title}" height="{settings.heightMaxBlocAlaUne}c" />
+						</f:if>
+					</f:for>
+				</f:then>
+				<f:else>
+					<img src="/fileadmin/templates/images/pic02.jpg" />
+				</f:else>
+			</f:if>
+		</f:link.action>
+             
+		<header>
+			<h3>
+				<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" title="{newsItem.title}">
+					<f:format.crop maxCharacters="100" append="&nbsp;...">{newsItem.title}</f:format.crop>
+               	</f:link.action>
+			</h3>
+			
+			<div class="datecat">
+				<span><f:format.date format="d/m/Y">{newsItem.datetime}</f:format.date></span>
+				<f:if condition="{newsItem.categories}">
+					<f:then>
+						<f:for each="{newsItem.categories}" as="categorie" key="img" iteration="itera">
+							<f:if condition="{itera.isFirst}">
+								<span class="right categorie">{categorie.title}</span>
+							</f:if>
+						</f:for>
+					</f:then>
+					<f:else>
+						<span class="right categorie">НЕТ КАТЕГОРИИ</span>
+					</f:else>
+				</f:if>
+			</div>
+		</header>
+
+		<f:if condition="{number} > 1">
+			<f:then>
+				<p><f:format.crop maxCharacters="100" append="&nbsp;...">{newsItem.teaser}</f:format.crop></p>
+			</f:then>
+			<f:else>
+				<p><f:format.crop maxCharacters="250" append="&nbsp;...">{newsItem.teaser}</f:format.crop></p>
+			</f:else>
+		</f:if>
+
+		<footer>
+			<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" title="{newsItem.title}" class="button alt">
+				<f:translate key="LLL:EXT:denned_news/Resources/Private/Language/locallang.xlf:tx_dennednews_domain_model_news.readNews" />
+			</f:link.action>
+		</footer>
+	</section>
+</div>
