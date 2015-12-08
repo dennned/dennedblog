@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2013-07-02T12:17:02Z" product-name="denned_news">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_dennednews_domain_model_news">
+				<source>News</source>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.tx_workshop_title">
+				<source>txWorkshopTitle</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_workshop_title">
+				<source>txWorkshopTitle</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_time_the">
+				<source>The</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_time_a">
+				<source>at</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_time_hours">
+				<source>:</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_page">
+				<source>News</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_back_to_the_list">
+				<source>Back to the list</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_share_title">
+				<source>Share this article</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_page_media">
+				<source>Media</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_download">
+				<source>Download</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_list_media_select_default">
+				<source>All</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_no_news_available">
+				<source>No medias available</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_no__page_news_available">
+				<source>No news available</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_title_link_all_photos">
+				<source>All photos</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.twitter_lang">
+				<source>en</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tfacebook_like_lang">
+				<source>en</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.facebook_lang">
+				<source>en_US</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.title_block_last_news">
+				<source>More news</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_01">
+				<source>January</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_02">
+				<source>February</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_03">
+				<source>March</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_04">
+				<source>April</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_05">
+				<source>May</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_06">
+				<source>June</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_07">
+				<source>July</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_08">
+				<source>August</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_09">
+				<source>September</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_10">
+				<source>October</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_11">
+				<source>November</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_12">
+				<source>December</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.read_more_title_menu_right">
+				<source>See more</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.title_bloc_right_ajax">
+				<source>News</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.title_bloc_link_more">
+				<source>See all news</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.mobile.title_last_news">
+				<source>Latest news</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.mobile.title_link_all_news">
+				<source>See all news</source>
+			</trans-unit>
+
+			<trans-unit id="tx_dennednews_domain_model_news.mobile.title_video_last_news">
+				<source>Video</source>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.tx_news_filter_month_all">
+				<source>All</source>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMedia">
+				<source>All News Media</source>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.alaUne">
+				<source>Latest Media</source>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownload">
+				<source>Download</source>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownloadPhoto">
+				<source>Download photo</source>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.allMediaDownloadVideo">
+				<source>See video</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.notdata">
+				<target>Упс... пост пропал! Смотри другие посты! Нажимай сюда</target>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.readNews">
+				<target>Читать</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.dateFormat">
+				<target>%d/%m/%Y</target>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.paginate_next">
+				<target>Следующая</target>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.paginate_previous">
+				<target>Предыдущая</target>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.dateFormat">
+				<target>%d/%m/%Y</target>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.back-link">
+				<target>Вернуться на главную</target>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.comments">
+				<target>Комментарии</target>
+			</trans-unit>
+
+
+			
+
+		</body>
+	</file>
+</xliff>
