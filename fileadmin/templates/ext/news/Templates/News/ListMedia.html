@@ -1,0 +1,68 @@
+<f:if condition="{news}">
+	<f:then>
+		<div class="8u 12u(mobile)">
+			<section>
+				<header>
+					<h2>{blockTitle}</h2>
+				</header>
+				<ul class="dates">
+					<f:for each="{news}" as="newsItem">
+						<li>
+							<span class="date"><f:format.date format="M">{newsItem.datetime}</f:format.date> <strong><f:format.date format="d">{newsItem.datetime}</f:format.date></strong></span>
+							<h3>
+								<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" title="{newsItem.title}">
+									<f:format.crop maxCharacters="60" append="&nbsp;...">{newsItem.title}</f:format.crop>
+				               	</f:link.action>
+			               	</h3>
+			               	<p><f:format.crop maxCharacters="130" append="&nbsp;...">{newsItem.teaser}</f:format.crop></p>
+						</li>
+					</f:for>
+				</ul>
+			</section>
+		</div>
+	</f:then>
+	<f:else>
+		<div class="not_news">
+	    	<h1>
+	    		<f:link.page pageUid="{uidPageHome}"> 
+		  			<f:translate key="LLL:EXT:denned_news/Resources/Private/Language/locallang.xlf:tx_dennednews_domain_model_news.notdata" />
+		  		</f:link.page>
+	    	</h1>
+    	</div>
+	</f:else>
+</f:if>
+
+<div class="4u 12u(mobile)">
+	<section>
+		<header>
+			<h2>Место встречи</h2>
+		</header>
+		<ul class="social">
+			<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+			<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+			<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+			<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
+			<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+		</ul>
+		<ul class="contact">
+			<li>
+				<h3>Автор</h3>
+				<p>
+					Макаренко Денис
+				</p>
+			</li>
+			<li>
+				<h3>Город</h3>
+				<p>Париж</p>
+			</li>
+			<li>
+				<h3>Вера</h3>
+				<p>В Бога</p>
+			</li>
+			<li>
+				<h3>Цель</h3>
+				<p>путешествия,развитие и поиск себя в этом мире</p>
+			</li>
+		</ul>
+	</section>
+</div>
