@@ -81,9 +81,31 @@ class Tx_DennedNews_Controller_NewsController extends Tx_News_Controller_NewsCon
 	 * @return void
 	 */
 
-	public function listMediaAction(array $overwriteDemand = NULL){
+	public function listMediaAction(){
+		
+		$demand = $this->createDemandObjectFromSettings($this->settings);
+		
+		if ($this->settings['disableOverrideDemand'] != 1 && $overwriteDemand !== NULL) {
+			$demand = $this->overwriteDemandObject($demand, $overwriteDemand);
+		}
+		$newsRecords = $this->newsRepository->findDemanded($demand);
+		
+		//\TYPO3\CMS\Core\Utility\DebugUtility::debug($this->settings['list']['news'],'$$$$$$this->settings');
+		//\TYPO3\CMS\Core\Utility\DebugUtility::debug($contentObject->data['header'],'TITLE');
+		
+		$contentObject = $this->configurationManager->getContentObject();
+		
+		$pageHome = $this->settings['list']['news']['uidPageNewsHome'];
+		
+		$this->view->assignMultiple(array(
+				'news' => $newsRecords,
+				'overwriteDemand' => $overwriteDemand,
+				'demand' => $demand,
+				'uidPageHome' => $pageHome,
+				'blockTitle' => htmlspecialchars($contentObject->data['header']),
+		));
 
-		$arrayCategories = array();
+		/*$arrayCategories = array();
 		$choiseUser = array();
 		$uidCategoryParent = intval($this->settings['list']['media']['categorieParent']);
 		$listCategories = $this->categoryRepository->findChildren($uidCategoryParent);
@@ -148,7 +170,7 @@ class Tx_DennedNews_Controller_NewsController extends Tx_News_Controller_NewsCon
 				'category' => $selectCategory,
 				'titlePage' => $GLOBALS['TSFE']->page['title'],
 				'selectedDefault' => $selectDefault,
-		));
+		));*/
 	}
 
 

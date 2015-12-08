@@ -17,7 +17,7 @@
 				<source>Web</source>
 			</trans-unit>
 			<trans-unit id="tx_dennednews_domain_model_news_action_list_media_news">
-				<source>List media</source>
+				<source>List news footer</source>
 			</trans-unit>
 			<trans-unit id="tx_dennednews_domain_model_news_action_list_news_filter">
 				<source>List News Filter</source>

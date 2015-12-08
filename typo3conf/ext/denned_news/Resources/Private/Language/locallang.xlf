@@ -174,14 +174,45 @@
 			</trans-unit>
 			
 			<trans-unit id="tx_dennednews_domain_model_news.readNews">
-				<source>Читать</source>
+				<source>Read</source>
 			</trans-unit>
-
-
+			<trans-unit id="tx_dennednews_domain_model_news.dateFormat">
+				<source>%d/%m/%Y</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.paginate_next">
+				<source>Next</source>
+			</trans-unit>
+			<trans-unit id="tx_dennednews_domain_model_news.paginate_previous">
+				<source>Previous</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.dateFormat">
+				<source>%m/%d/%Y</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.back-link">
+				<source>Back</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news.comments">
+				<source>Comments</source>
+			</trans-unit>
+			
+			
+			
+			
+			
+			
+			
+			
 
 
 			
 
 		</body>
 	</file>
+	
+	
+	
 </xliff>

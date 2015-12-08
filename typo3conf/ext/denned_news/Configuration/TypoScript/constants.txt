@@ -42,7 +42,10 @@ plugin.tx_news {
         # cat=plugin.tx_news/file; type=string; label=Path to template layouts (FE)
         layoutRootPath = fileadmin/templates/ext/news/Layouts/
 
-        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = fileadmin/templates/ext/news/Templates/
+        #widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = fileadmin/templates/ext/news/Templates/
+        #widget.GeorgRinger\News\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = fileadmin/templates/ext/news/Templates/
+        
+        #fileadmin/templates/ext/news/Templates/ViewHelpers/Widget/Paginate/Index.html	
     }
     persistence {
         # cat=plugin.tx_news//a; type=string; label=Default storage PID
@@ -128,7 +131,7 @@ plugin.tx_news {
 		detail{
 			media{
 				image{
-					maxWidth = 792
+					maxWidth = 1000
 					maxHeight = 409
 				}
 			}

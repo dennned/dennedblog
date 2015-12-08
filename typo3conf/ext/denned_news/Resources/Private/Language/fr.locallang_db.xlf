@@ -21,7 +21,7 @@
 			</trans-unit>
 
 			<trans-unit id="tx_dennednews_domain_model_news_action_list_media_news">
-				<target>Liste des médias</target>
+				<target>Liste des actus footer</target>
 			</trans-unit>
 
 		</body>

@@ -26,6 +26,8 @@ plugin.tx_dennednews{
         partialRootPath = {$plugin.tx_dennednews.view.partialRootPath}
         # cat=plugin.tx_news/file; type=string; label=Path to template layouts (FE)
         layoutRootPath = {$plugin.tx_dennednews.view.layoutRootPath}
+        
+        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = {$plugin.tx_dennednews.view.templateRootPath}
 	}
 
 	persistence {
@@ -56,7 +58,7 @@ plugin.tx_news {
         partialRootPath = {$plugin.tx_news.view.partialRootPath}
         layoutRootPath = {$plugin.tx_news.view.layoutRootPath}
 
-        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = {$plugin.tx_news.view.widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath}
+        widget.GeorgRinger\News\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = {$plugin.tx_dennednews.view.templateRootPath}
     }
     persistence {
         storagePid = {$plugin.tx_news.persistence.storagePid}
