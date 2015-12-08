@@ -44,7 +44,8 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']=array (
 						array(
 								'GETvar' => 'L',
 								'valueMap' => array(
-										'' => '0',
+										'en' => '0',
+										'ru' => '1',
 								),
 								'noMatch' => 'bypass',
 						),
@@ -81,6 +82,12 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']=array (
 													),
 											),
 								),
+								'page' => array(
+										array(
+												'GETvar' => 'tx_news_pi1[@widget_0][currentPage]',
+												//'noMatch' => 'bypass'
+										)
+								)
 						),
 				),
 		),
