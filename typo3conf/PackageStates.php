@@ -475,6 +475,15 @@ return array (
       array (
       ),
     ),
+    't3adminer' => 
+    array (
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/t3adminer/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'realurl' => 
     array (
       'state' => 'active',
