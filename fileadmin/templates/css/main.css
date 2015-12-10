@@ -858,7 +858,7 @@
 		}
 
 		.row {
-			margin: -20px 0 -1px -20px;
+			margin: 0px 0 -1px -20px;
 		}
 
 		.row.uniform > * {
@@ -1063,7 +1063,9 @@
 		.\-1u\28mobile\29 {
 			margin-left: 8.33333%;
 		}
-
+		#intro .middle, #intro .last{
+			padding: 20px 0 0 0;
+		}
 	}
 
 /* Basic */

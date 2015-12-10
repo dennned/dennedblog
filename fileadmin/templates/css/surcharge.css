@@ -210,6 +210,32 @@
     display: inline-block;
     vertical-align: top;
 }
+#header {
+	position: relative;
+}
+.langs-bar {
+	width: 125px;
+	position: absolute;
+	top:0px;
+	right: 0px;
+}
+.langs-bar li {
+	display: inline-block;
+    margin: 0 10px 0 0;
+    height: 48px;
+}
+.langs-bar li a{
+	width: auto;
+	height: auto;
+}
+.langs-bar img {
+	width: 50px;
+	border: 1px solid #5d5d5d;
+}
+.langs-bar li.active{
+	border-bottom: 5px solid #d52349;
+}
+
 /* CONTENT start */
 
 /* RTE */
@@ -223,3 +249,12 @@
 	text-align: right;
 }
 /* RTE */
+
+
+@media screen and (max-width: 736px)  {
+	.bxslider li div{
+		top: 15%;
+   		left: 10%;	
+	}
+	
+}
