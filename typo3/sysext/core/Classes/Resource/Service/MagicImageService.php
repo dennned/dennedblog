@@ -29,7 +29,7 @@ class MagicImageService {
 	 * Then we're almost certain the image will be based on the width
 	 * @var int
 	 */
-	protected $magicImageMaximumWidth = 300;
+	protected $magicImageMaximumWidth = 870;
 
 	/**
 	 * Maximum height of magic images
@@ -45,6 +45,7 @@ class MagicImageService {
 	 * @return Resource\ProcessedFile
 	 */
 	public function createMagicImage(Resource\File $imageFileObject, array $fileConfiguration) {
+		
 		// Process dimensions
 		$maxWidth = MathUtility::forceIntegerInRange($fileConfiguration['width'], 0, $this->magicImageMaximumWidth);
 		$maxHeight = MathUtility::forceIntegerInRange($fileConfiguration['height'], 0, $this->magicImageMaximumHeight);
