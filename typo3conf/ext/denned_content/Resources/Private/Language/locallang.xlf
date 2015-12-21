@@ -21,11 +21,11 @@
 			</trans-unit>
 			
 			<trans-unit id="tx_dennedcontent_domain_model_link">
-				<source>А что дальше ? Читать ...</source>
+				<source>Read More</source>
 			</trans-unit>
 			
 			<trans-unit id="tx_dennedcontent_domain_model_not_news">
-				<source>Упс... пост пропал! Смотри другие посты! Нажимай сюда</source>
+				<source>Oooops! See other posts! Click here!</source>
 			</trans-unit>
 
 		</body>

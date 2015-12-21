@@ -58,7 +58,7 @@ plugin.tx_news {
     	pageListeNewArticle = 9
     	pageListeNewMedia = 8
     	heightMaxBlocAlaUne = 250
-    	widthMaxBlocAlaUne = 350
+    	widthMaxBlocAlaUne = 575
 
     	widthMaxBlocAlaUneGrande = 808
     	heighMaxBlocAlaUneGrande = 438
