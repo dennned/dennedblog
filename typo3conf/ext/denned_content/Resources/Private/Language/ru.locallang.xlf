@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2013-07-02T12:17:02Z" product-name="denned_news">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_dennedcontent_domain_model_link">
+				<target>А что дальше ? Читать ...</target>
+			</trans-unit>
+			
+			<trans-unit id="tx_dennedcontent_domain_model_not_news">
+				<target>Упс... пост пропал! Смотри другие посты! Нажимай сюда</target>
+			</trans-unit>
+			
+
+		</body>
+	</file>
+</xliff>
