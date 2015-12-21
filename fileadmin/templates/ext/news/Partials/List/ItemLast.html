@@ -14,6 +14,7 @@
 		</f:if>
 	</f:else>
 </f:if>
+
             		
 	<section class="box">
 		<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" class="image featured" title="{newsItem.title}">
@@ -21,7 +22,7 @@
 				<f:then>
 					<f:for each="{newsItem.media}" as="media" key="img">
 						<f:if condition="{media.sorting}=='1'">
-							<f:image src="uploads/tx_news/{media.image}"  alt="{newsItem.title}" height="{settings.heightMaxBlocAlaUne}c" />
+							<f:image src="uploads/tx_news/{media.image}"  alt="{newsItem.title}" height="{settings.heightMaxBlocAlaUne}c"  class="test" />
 						</f:if>
 					</f:for>
 				</f:then>
