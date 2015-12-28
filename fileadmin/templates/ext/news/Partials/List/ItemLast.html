@@ -22,7 +22,16 @@
 				<f:then>
 					<f:for each="{newsItem.media}" as="media" key="img">
 						<f:if condition="{media.sorting}=='1'">
-							<f:image src="uploads/tx_news/{media.image}"  alt="{newsItem.title}" height="{settings.heightMaxBlocAlaUne}c"  class="test" />
+							
+							<f:if condition="{number} > 1">
+								<f:then>
+									<f:image src="uploads/tx_news/{media.image}"  alt="{newsItem.title}" height="{settings.heightMaxBlocAlaUne}c" width="{settings.widthMaxBlocAlaLittle}c" class="ZZZZ"/>
+								</f:then>
+								<f:else>
+									<f:image src="uploads/tx_news/{media.image}"  alt="{newsItem.title}" height="{settings.heightMaxBlocAlaUne}c" width="{settings.widthMaxBlocAlaUne}c"  class="test" />
+								</f:else>
+							</f:if>
+						
 						</f:if>
 					</f:for>
 				</f:then>
@@ -55,6 +64,7 @@
 				</f:if>
 			</div>
 		</header>
+		
 
 		<f:if condition="{number} > 1">
 			<f:then>
