@@ -48,6 +48,9 @@ plugin.tx_dennednews{
 				uidPageNewsHome = {$plugin.tx_dennednews.settings.list.news.uidPageNewsHome}
 			}
 		}
+		heightMaxBlocAlaUne = {$plugin.tx_dennednews.settings.heightMaxBlocAlaUne}
+    	widthMaxBlocAlaUne = {$plugin.tx_dennednews.settings.widthMaxBlocAlaUne}
+    	widthMaxBlocAlaLittle = {$plugin.tx_dennednews.settings.widthMaxBlocAlaLittle}
 	}
 }
 
@@ -79,6 +82,8 @@ plugin.tx_news {
 
     	widthMaxBlocAlaUneGrande = {$plugin.tx_news.settings.widthMaxBlocAlaUneGrande}
     	heighMaxBlocAlaUneGrande = {$plugin.tx_news.settings.heighMaxBlocAlaUneGrande}
+    	
+    	widthMaxBlocAlaLittle = {$plugin.tx_news.settings.widthMaxBlocAlaLittle}
 
     	cropAlaUne = {$plugin.tx_news.settings.cropAlaUne}
 

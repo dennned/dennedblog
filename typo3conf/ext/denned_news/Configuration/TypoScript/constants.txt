@@ -27,7 +27,9 @@ plugin.tx_dennednews{
 				uidPageNewsHome = 1
 			}
 		}
-		
+		heightMaxBlocAlaUne = 250
+    	widthMaxBlocAlaUne = 575
+    	widthMaxBlocAlaLittle = 367
 
 	}
 }
@@ -59,6 +61,8 @@ plugin.tx_news {
     	pageListeNewMedia = 8
     	heightMaxBlocAlaUne = 250
     	widthMaxBlocAlaUne = 575
+    	
+    	widthMaxBlocAlaLittle = 367
 
     	widthMaxBlocAlaUneGrande = 808
     	heighMaxBlocAlaUneGrande = 438
