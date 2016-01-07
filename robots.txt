@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /fileadmin/
+Disallow: /typo3temp/
+
+Sitemap: http://www.dennedblog.net/sitemap.xml
