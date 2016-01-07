@@ -25,6 +25,8 @@ plugin.tx_dennedcontent {
 		limitHomeNews = {$plugin.tx_dennedcontent.settings.limitHomeNews}
 		widthMaxBlocHome = {$plugin.tx_dennedcontent.settings.widthMaxBlocHome}
 		heightMaxBlocHome = {$plugin.tx_dennedcontent.settings.heightMaxBlocHome}
+		heightMaxBlocHomeSlider = {$plugin.tx_dennedcontent.settings.heightMaxBlocHomeSlider}
+		widthMaxBlocHomeSlider = {$plugin.tx_dennedcontent.settings.widthMaxBlocHomeSlider}
 	}
 }
 

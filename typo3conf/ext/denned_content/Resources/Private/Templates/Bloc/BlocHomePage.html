@@ -16,7 +16,7 @@
 						<f:then>
 							<f:for each="{slide.media}" as="media" key="img">
 								<f:if condition="{media.sorting}=='1'">
-									<f:image src="uploads/tx_news/{media.image}"  alt="{slide.title}" height="{settings.heightMaxBlocHome}c" />
+									<f:image src="uploads/tx_news/{media.image}"  alt="{slide.title}"  width="{settings.widthMaxBlocHomeSlider}c" height="{settings.heightMaxBlocHomeSlider}c"/>
 								</f:if>
 							</f:for>
 						</f:then>

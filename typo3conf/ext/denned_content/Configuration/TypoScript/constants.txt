@@ -25,5 +25,8 @@ plugin.tx_dennedcontent {
 		limitHomeNews = 5
 		widthMaxBlocHome = 270
 		heightMaxBlocHome = 537
+		
+		heightMaxBlocHomeSlider = 537
+		widthMaxBlocHomeSlider = 1907
 	}
 }
