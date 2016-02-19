@@ -333,7 +333,7 @@
 	}
 	.langs-bar {
     	width: 50px;
-    	top: 25px;
+    	top: 40px;
     	left: 20px;
 	}
 	.langs-bar li a {
@@ -348,7 +348,7 @@
 	}
 	
 	#header-wrapper{
-		padding: 1.5em 0 0 0;
+		padding: 1.5em 0 1.5em 0;
 	}
 	#header .detail_title a{
 		width: 226px;
@@ -357,7 +357,9 @@
 	#header .detail_title span{
 		font-family: Helvetica, Arial, sans-serif;
 		font-size: 15px;
+		margin: 0;
 	}
+	
 	#header h1 span{
 		width:auto;
 	}
@@ -386,6 +388,12 @@
 	}
 	.news p, .news h2, .news h3, .news a, h3,h2,h4,p,a, .posts_blog .box h3, .posts_blog .box a, .posts_blog .box p {
 		font-family: Helvetica, Arial, sans-serif;
+	}
+	#intro {
+		display: none;
+	}
+	#main-wrapper {
+    	padding: 1em 10px;
 	}
 	
 }
