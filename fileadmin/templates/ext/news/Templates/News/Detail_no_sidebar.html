@@ -1,0 +1,303 @@
+{namespace n=GeorgRinger\News\ViewHelpers}
+
+<f:layout name="Detail.html" />
+
+<!--
+	=====================
+		News/Detail.html
+-->
+
+<f:section name="content">
+	<f:if condition="{newsItem}">
+		<f:then>
+			<n:format.nothing>
+				<f:if condition="{newsItem.alternativeTitle}">
+					<f:then>
+						<n:titleTag>
+							<n:format.htmlentitiesDecode>{newsItem.alternativeTitle}</n:format.htmlentitiesDecode>
+						</n:titleTag>
+					</f:then>
+					<f:else>
+						<n:titleTag>
+							<n:format.htmlentitiesDecode>{newsItem.title}</n:format.htmlentitiesDecode>
+						</n:titleTag>
+					</f:else>
+				</f:if>
+				<f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
+			</n:format.nothing>
+			<div class="header">
+				<h3 itemprop="headline">{newsItem.title}</h3>
+			</div>
+			<div class="footer">
+				<p>
+					<!-- date -->
+					<span class="news-list-date">
+						<time datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
+							<f:format.date format="{f:translate(key:'tx_dennednews_domain_model_news.dateFormat',extensionName:'denned_news')}">{newsItem.datetime}</f:format.date>
+							<meta itemprop="datePublished" content="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}" />
+						</time>
+					</span>
+					
+
+					<f:if condition="{newsItem.categories}">
+						<f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" />
+					</f:if>
+
+					<f:if condition="{newsItem.tags}">
+						<!-- Tags -->
+						<span class="news-list-tags" itemprop="keywords">
+						<f:for each="{newsItem.tags}" as="tag">
+							{tag.title}
+						</f:for>
+						</span>
+					</f:if>
+
+					<f:if condition="{newsItem.author}">
+						<!-- author -->
+						<span class="news-list-author hide" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+							<f:translate key="author_simple" /> <span itemprop="name">{newsItem.author}</span>
+						</span>
+					</f:if>
+				</p>
+			</div>
+
+			<f:if condition="{newsItem.teaser}">
+				<!-- teaser -->
+				<div class="teaser-text" itemprop="description">
+					<f:format.html>{newsItem.teaser}</f:format.html>
+				</div>
+			</f:if>
+
+			<f:if condition="{newsItem.contentElements}">
+				<!-- content elements -->
+				<f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
+			</f:if>
+			
+
+			<!-- div class="DDDD">
+			<f:render partial="Detail/FalMediaContainer" arguments="{media: newsItem.relatedFiles, settings:settings}" />
+			</div-->
+			
+			<div class="files-img">
+			<f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}" />
+			</div>
+
+			<!-- main text -->
+			<div class="news-text-wrap online_editor" itemprop="articleBody">
+				<f:format.html>{newsItem.bodytext}</f:format.html>
+			</div>
+			
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5666a1f1b1abe1a0" async="async"></script>
+
+			<!-- f:if condition="{settings.detail.showSocialShareButtons}">
+				<div class="facebook">
+					<div class="like">
+						<n:social.facebook.like />
+					</div>
+					<div class="share">
+						<n:social.facebook.share />
+					</div>
+					<div class="twitter">
+						<n:social.twitter>Twitter</n:social.twitter>
+					</div>
+				</div>
+			</f:if-->
+
+			<f:if condition="{settings.detail.disqusShortname}">
+				<n:social.disqus newsItem="{newsItem}"
+								 shortName="{settings.detail.disqusShortname}"
+								 link="{n:link(newsItem:newsItem, settings:settings, uriOnly:1, configuration:'{forceAbsoluteUrl:1}')}" />
+			</f:if>
+
+			<!-- related things -->
+			<div class="news-related-wrap">
+
+				<f:if condition="{newsItem.allRelatedSorted}">
+					<!-- Related news records -->
+					<div class="news-related news-related-news">
+						<h4>
+							<f:translate key="related-news" />
+						</h4>
+						<ul>
+							<f:for each="{newsItem.allRelatedSorted}" as="related">
+								<li>
+									<span class="news-related-news-date"><f:format.date format="{f:translate(key:'dateFormat')}">{related.datetime}</f:format.date></span>
+									<n:link newsItem="{related}" settings="{settings}" title="{related.title}">
+										{related.title}
+									</n:link>
+								</li>
+
+							</f:for>
+						</ul>
+					</div>
+				</f:if>
+
+				<f:if condition="{newsItem.relatedFiles}">
+					<!-- Related files -->
+					<div class="news-related news-related-files">
+						<h4>
+							<f:translate key="related-files" />
+						</h4>
+						<ul>
+							<f:for each="{newsItem.relatedFiles}" as="relatedFile">
+								<li>
+									<span class="news-related-files-link">
+										<n:format.fileDownload file="uploads/tx_news/{relatedFile.file}" configuration="{settings.relatedFiles.download}">
+											<f:if condition="{relatedFile.title}">
+												<f:then>
+													{relatedFile.title}
+												</f:then>
+												<f:else>
+													{relatedFile.file}
+												</f:else>
+											</f:if>
+										</n:format.fileDownload>
+									</span>
+									<span class="news-related-files-size">
+										<n:format.fileSize file="uploads/tx_news/{relatedFile.file}" format="{settings.relatedFiles.fileSizeLabels}" />
+									</span>
+								</li>
+							</f:for>
+						</ul>
+					</div>
+				</f:if>
+
+				<f:if condition="{newsItem.falRelatedFiles}">
+					<!-- FAL related files -->
+					<div class="news-related news-related-files">
+						<h4>
+							<f:translate key="related-files" />
+						</h4>
+						<ul>
+							<f:for each="{newsItem.falRelatedFiles}" as="relatedFile">
+								<li>
+									<span class="news-related-files-link">
+										<n:format.fileDownload file="{relatedFile.originalResource.publicUrl}" configuration="{settings.relatedFiles.download}">
+											<f:if condition="{relatedFile.originalResource.title}">
+												<f:comment><!-- Todo: Remove format.raw() if using title/name outside cObject context--></f:comment>
+												<f:then>
+													{relatedFile.originalResource.title -> f:format.raw()}
+												</f:then>
+												<f:else>
+													{relatedFile.originalResource.name -> f:format.raw()}
+												</f:else>
+											</f:if>
+										</n:format.fileDownload>
+									</span>
+									<span class="news-related-files-size">
+										{relatedFile.originalResource.size -> f:format.bytes()}
+									</span>
+								</li>
+							</f:for>
+						</ul>
+					</div>
+				</f:if>
+
+				<f:if condition="{newsItem.relatedLinks}">
+					<!-- Related links -->
+					<div class="news-related news-related-links">
+						<h4>
+							<f:translate key="related-links" />
+						</h4>
+						<ul>
+							<f:for each="{newsItem.relatedLinks}" as="relatedLink">
+								<li>
+									<f:link.page pageUid="{relatedLink.uri}" title="{relatedLink.title}" target="{n:targetLink(link:relatedLink.uri)}">{f:if(condition: relatedLink.title, then: relatedLink.title, else: relatedLink.uri)}</f:link.page>
+									<f:if condition="{relatedLink.description}"><span>{relatedLink.description}</span></f:if>
+								</li>
+							</f:for>
+						</ul>
+					</div>
+				</f:if>
+			</div>
+			
+			<f:if condition="{settings.backPid}">
+				<!-- Link Back -->
+				<div class="news-backlink-wrap">
+					<f:link.page pageUid="{settings.backPid}">
+						<f:translate key="tx_dennednews_domain_model_news.back-link" extensionName="denned_news"/>
+					</f:link.page>
+				</div>
+			</f:if>
+			
+			<div class="comments">
+				<h4><f:translate key="tx_dennednews_domain_model_news.comments" extensionName="denned_news"/></h4>
+			</div>
+			
+			<div class="wrapper-comments">
+				<!-- >div class="comments-vk">
+					<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+					
+					<script type="text/javascript">
+					  VK.init({apiId: 5179847, onlyWidgets: true});
+					</script>
+					<div id="vk_comments"></div>
+					<script type="text/javascript">
+					VK.Widgets.Comments("vk_comments", {limit: 10, /*width: "550",*/ attach: "*"});
+					</script>
+					
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="comments-fb">
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+					
+					<div class="fb-comments" data-href="http://dennedblog.net" data-width="590" data-numposts="10"></div>
+					
+					<div class="clearfix"></div>
+				</div-->
+				
+				<div id="disqus_thread"></div>
+				<script>
+				/**
+				* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+				*/
+				/*
+				var disqus_config = function () {
+				this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				*/
+				(function() { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				
+				s.src = '//dennedblog.disqus.com/embed.js';
+				
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+								
+				<div id="mc-container"></div>
+				<script type="text/javascript">
+				cackle_widget = window.cackle_widget || [];
+				cackle_widget.push({widget: 'Comment', id: 41187});
+				(function() {
+				    var mc = document.createElement('script');
+				    mc.type = 'text/javascript';
+				    mc.async = true;
+				    mc.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cackle.me/widget.js';
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+				})();
+				</script>
+				<a id="mc-link" href="http://cackle.me">Comments system <b style="color:#4FA3DA">Cackl</b><b style="color:#F65077">e</b></a>
+				
+			</div>
+
+		</f:then>
+		<f:else>
+
+		</f:else>
+		
+	</f:if>
+</f:section>

@@ -1,0 +1,51 @@
+{namespace n=GeorgRinger\News\ViewHelpers}
+
+<f:if condition="{news}">
+	<f:then>
+		<f:for each="{news}" as="newsItem" iteration="iterator">
+			
+			<section class="box">
+				<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" class="image featured" title="{newsItem.title}">
+					<f:if condition="{newsItem.media}">
+						<f:then>
+							<f:for each="{newsItem.media}" as="media" key="img">
+								<f:if condition="{media.sorting}=='1'">
+									
+									<f:if condition="{number} > 1">
+										<f:then>
+											<f:image src="uploads/tx_news/{media.image}"  alt="{newsItem.title}" height="{settings.heightMaxBlocAlaUne}c" width="{settings.widthMaxBlocAlaLittle}c" class="ZZZZ"/>
+										</f:then>
+										<f:else>
+											<f:image src="uploads/tx_news/{media.image}"  alt="{newsItem.title}" height="{settings.heightMaxBlocImageRight}" width="{settings.widthMaxBlocImageRight}c"  class="test" />
+										</f:else>
+									</f:if>
+								
+								</f:if>
+							</f:for>
+						</f:then>
+						<f:else>
+							<img src="/fileadmin/templates/images/pic02.jpg" />
+						</f:else>
+					</f:if>
+				</f:link.action>
+				<header>
+					<h3>
+						<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" title="{newsItem.title}">
+							<f:format.crop maxCharacters="40" append="&nbsp;...">{newsItem.title}</f:format.crop>
+		               	</f:link.action>
+	               	</h3>
+				</header>
+				<p><f:format.crop maxCharacters="100" append="&nbsp;...">{newsItem.teaser}</f:format.crop></p>
+				<footer>
+					<f:link.action extensionName="news" action="detail" arguments="{news:newsItem.uid}" controller="News" pageUid="{settings.list.news.uidDetailArticle}" title="{newsItem.title}" class="button alt">
+						<f:translate key="tx_dennednews_domain_model_news.readNews" extensionName="denned_news"/>
+					</f:link.action>
+				</footer>
+			</section>
+			
+			
+		</f:for>
+	</f:then>
+	<f.else>
+	</f.else>
+</f:if>
