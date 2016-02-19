@@ -25,6 +25,15 @@
 		         </config>
 		        </TCEforms>
 		 </settings.actus>
+		 <settings.mobile>
+		        <TCEforms>
+		         <exclude>1</exclude>
+		         <label>LLL:EXT:denned_content/Resources/Private/Language/locallang_db.xlf:tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_mobile</label>
+		         <config>
+		          <type>check</type>
+		         </config>
+		        </TCEforms>
+		 </settings.mobile>
      </el>
     </ROOT>
    </sDEF>

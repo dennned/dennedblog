@@ -33,7 +33,7 @@ use TYPO3\CMS\Extbase\Property\TypeConverter\IntegerConverter;
 class Tx_DennedNews_Domain_Repository_NewsRepository extends Tx_News_Domain_Repository_NewsRepository {
 
 	public function findLastHomePageNews($limit){
-
+		
 		$query = $this->createQuery();
 		$query->setOrderings(array('crdate' => \Tx_Extbase_Persistence_QueryInterface::ORDER_DESCENDING));
 		$query->setLimit($limit);
@@ -139,10 +139,37 @@ class Tx_DennedNews_Domain_Repository_NewsRepository extends Tx_News_Domain_Repo
 		if (intval($limit)){
 			$query->setLimit(intval($limit));
 		}
-
-
 		return $query->execute();
 
+	}
+	
+	/**
+	 * GET news without one news
+	 * @see Tx_News_Domain_Repository_NewsRepository::findNewsRight()
+	 */
+	
+	public function findNewsRight($uidNews,$demand){
+		
+		$limit = $demand->getLimit();
+		$pid = $demand->getStoragePage();
+		$category = $demand->getCategories();
+		
+		$query = $this->createQuery();
+		
+		$query->matching(
+				$query->logicalAnd(
+					$query->equals('pid', intval($pid)),
+					$query->equals('sys_language_uid', $GLOBALS['TSFE']->sys_language_uid),
+					$query->logicalNot($query->equals('uid', intval($uidNews)))
+				));
+	
+		$query->getQuerySettings()->setRespectStoragePage(FALSE);
+		$query->setOrderings(array('datetime' => \Tx_Extbase_Persistence_QueryInterface::ORDER_DESCENDING));
+		if (intval($limit)){
+			$query->setLimit(intval($limit));
+		}
+		return $query->execute();
+	
 	}
 
 }

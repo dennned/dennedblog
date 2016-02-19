@@ -1,8 +1,9 @@
 config.tx_extbase {
 	objects{
 		#Tx_News_Controller_NewsController.className = Tx_DennedNews_Controller_NewsController
-		Tx_News_Domain_Repository_NewsRepository.className = Tx_DennedNews_Domain_Repository_NewsRepository
+		#Tx_News_Domain_Repository_NewsRepository.className = Tx_DennedNews_Domain_Repository_NewsRepository
 		GeorgRinger\News\Controller\NewsController.className = Tx_DennedNews_Controller_NewsController
+		GeorgRinger\News\Domain\Repository\NewsRepository.className = Tx_DennedNews_Domain_Repository_NewsRepository
 	}
 
 	persistence {
@@ -51,6 +52,12 @@ plugin.tx_dennednews{
 		heightMaxBlocAlaUne = {$plugin.tx_dennednews.settings.heightMaxBlocAlaUne}
     	widthMaxBlocAlaUne = {$plugin.tx_dennednews.settings.widthMaxBlocAlaUne}
     	widthMaxBlocAlaLittle = {$plugin.tx_dennednews.settings.widthMaxBlocAlaLittle}
+    	
+    	widthMaxBlocImageRight = {$plugin.tx_dennednews.settings.widthMaxBlocImageRight}
+    	heightMaxBlocImageRight = {$plugin.tx_dennednews.settings.heightMaxBlocImageRight}
+    	
+    	heightMaxBlocDetail = {$plugin.tx_dennednews.settings.heightMaxBlocDetail}
+    	widthMaxBlocDetail = {$plugin.tx_dennednews.settings.widthMaxBlocDetail}
 	}
 }
 
@@ -82,6 +89,12 @@ plugin.tx_news {
 
     	widthMaxBlocAlaUneGrande = {$plugin.tx_news.settings.widthMaxBlocAlaUneGrande}
     	heighMaxBlocAlaUneGrande = {$plugin.tx_news.settings.heighMaxBlocAlaUneGrande}
+    	
+    	widthMaxBlocImageRight = {$plugin.tx_dennednews.settings.widthMaxBlocImageRight}
+    	heightMaxBlocImageRight = {$plugin.tx_dennednews.settings.heightMaxBlocImageRight}
+    	
+    	heightMaxBlocDetail = {$plugin.tx_dennednews.settings.heightMaxBlocDetail}
+    	widthMaxBlocDetail = {$plugin.tx_dennednews.settings.widthMaxBlocDetail}
     	
     	widthMaxBlocAlaLittle = {$plugin.tx_news.settings.widthMaxBlocAlaLittle}
 

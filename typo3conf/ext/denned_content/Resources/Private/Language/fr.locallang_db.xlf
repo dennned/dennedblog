@@ -32,6 +32,10 @@
 				<target>Bloc pendant</target>
 			</trans-unit>
 			
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_mobile">
+				<target>Hide for mobile</target>
+			</trans-unit>
+			
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_sheet2">
 				<source>Trip</source>
 			</trans-unit>

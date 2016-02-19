@@ -30,6 +30,13 @@ class tx_dennedcontent{
 				'description' => 'LLL:EXT:denned_content/Resources/Private/Language/locallang_db.xlf:tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_description',
 				'params' => '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=dennedcontent_pi2&defVals[tt_content][select_key]=' . rawurlencode('GUESTBOOK, POSTFORM')
 		);
+		
+		$wizardItems['plugins_dennedcontent_pi3'] = array(
+				'icon' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('denned_content') . 'ext_icon.gif',
+				'title' => 'LLL:EXT:denned_content/Resources/Private/Language/locallang_db.xlf:tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi3_name',
+				'description' => 'LLL:EXT:denned_content/Resources/Private/Language/locallang_db.xlf:tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi3_description',
+				'params' => '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=dennedcontent_pi3&defVals[tt_content][select_key]=' . rawurlencode('GUESTBOOK, POSTFORM')
+		);
 
 		return $wizardItems;
 	}

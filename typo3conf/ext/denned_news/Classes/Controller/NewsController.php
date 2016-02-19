@@ -458,9 +458,6 @@ class Tx_DennedNews_Controller_NewsController extends Tx_News_Controller_NewsCon
 		
 		$pid = $this->settings['list']['media']['pidMedia'];
 		
-		var_dump($pid);
-		die('TEST');
-
 		$categoryAlaUne = $this->settings['list']['media']['catAlaUne'];
 		$limitAlaUne = $this->settings['list']['media']['limitAlaUne'];
 		$newsUne = $this->newsRepository->findNewsAlaUne($limitAlaUne,$categoryAlaUne,$pid);
@@ -482,5 +479,32 @@ class Tx_DennedNews_Controller_NewsController extends Tx_News_Controller_NewsCon
 				'urlBase' => \TYPO3\CMS\Core\Utility\GeneralUtility::getIndpEnv(TYPO3_SITE_URL),
 		));
 	}
+	
+	/**
+	 * List NEws right Bloc
+	 */
+	
+	public function listRightAction () {
+		
+		$getParams = $this->request->getArguments();
+		$uidNews = $getParams['news'];
+		
+		if($uidNews) {
+			$demand = $this->createDemandObjectFromSettings($this->settings);
+			
+			$news = $this->newsRepository->findNewsRight($uidNews,$demand);
+			
+			
+			$this->view->assignMultiple(array(
+					'news' => $news,
+					'overwriteDemand' => $overwriteDemand,
+					'demand' => $demand,
+					'uidPageHome' => $pageHome,
+					'blockTitle' => htmlspecialchars($contentObject->data['header']),
+			));
+			
+		}
+	}
+	
 
 }

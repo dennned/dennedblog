@@ -11,6 +11,7 @@ if (!defined('TYPO3_MODE')) {
 		'News' => 'listNewsFilter',
 		'News' => 'listNewsNonFilter',
 		'News' => 'alaUne',
+		'News' => 'listRight',
 	),
 	// non-cacheable actions
 	array(
@@ -18,6 +19,7 @@ if (!defined('TYPO3_MODE')) {
 		'News' => 'listNewsFilter',
 		'News' => 'listNewsNonFilter',
 		'News' => 'alaUne',
+		'News' => 'listRight',
 	)
 );
 

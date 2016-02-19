@@ -28,6 +28,12 @@
 			<trans-unit id="tx_dennednews_domain_model_news_action_list_news_alaune">
 				<source>A la une</source>
 			</trans-unit>
+			
+			<trans-unit id="tx_dennednews_domain_model_news_action_list_right">
+				<source>News Block Right</source>
+			</trans-unit>
+			
+			
 
 
 		</body>

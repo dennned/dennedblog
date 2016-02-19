@@ -27,11 +27,23 @@
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi2_description">
 				<source>Plugin to display a bloc link image</source>
 			</trans-unit>
+			
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi3_name">
+				<source>[Denned] Registration user</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi3_description">
+				<source>Plugin to registration users in front</source>
+			</trans-unit>
 
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1">
 				<source>Config Slider</source>
 			</trans-unit>
-
+			
+			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_mobile">
+				<source>Hide for mobile</source>
+			</trans-unit>
+			
 			<trans-unit id="tt_content.tx_extbase_type.Tx_DennedContent_Bloc_pi1_sheet1_start_date">
 				<source>Start date</source>
 			</trans-unit>

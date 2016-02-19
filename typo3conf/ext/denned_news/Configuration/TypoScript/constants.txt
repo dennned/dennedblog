@@ -30,6 +30,11 @@ plugin.tx_dennednews{
 		heightMaxBlocAlaUne = 250
     	widthMaxBlocAlaUne = 575
     	widthMaxBlocAlaLittle = 367
+    	widthMaxBlocImageRight = 366
+    	heightMaxBlocImageRight = 250
+    	heightMaxBlocDetail = 250
+    	widthMaxBlocDetail = 783
+    	
 
 	}
 }
@@ -63,9 +68,15 @@ plugin.tx_news {
     	widthMaxBlocAlaUne = 575
     	
     	widthMaxBlocAlaLittle = 367
+    	
+    	widthMaxBlocImageRight = 366
+    	heightMaxBlocImageRight = 250
 
     	widthMaxBlocAlaUneGrande = 808
     	heighMaxBlocAlaUneGrande = 438
+    	
+    	heightMaxBlocDetail = 250
+    	widthMaxBlocDetail = 783
 
     	cropAlaUne = 200
 
@@ -135,8 +146,12 @@ plugin.tx_news {
 		detail{
 			media{
 				image{
-					maxWidth = 1000
-					maxHeight = 409
+					maxWidth = 783
+					maxHeight = 290
+				}
+				video{
+					width = 727
+					height = 435
 				}
 			}
 		}

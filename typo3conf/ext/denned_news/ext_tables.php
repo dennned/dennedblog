@@ -19,6 +19,9 @@ $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['switchableControllerActions']['newIt
 
 $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['switchableControllerActions']['newItems']['News->alaUne'] = 'LLL:EXT:denned_news/Resources/Private/Language/locallang_db:tx_dennednews_domain_model_news_action_list_news_alaune';
 
+
+$GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['switchableControllerActions']['newItems']['News->listRight'] = 'LLL:EXT:denned_news/Resources/Private/Language/locallang_db:tx_dennednews_domain_model_news_action_list_right';
+
 $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['templateLayouts']['web'] = array('LLL:EXT:denned_news/Resources/Private/Language/locallang_db:tx_dennednews_domain_model_news_template_layout_news', 1);
 $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['templateLayouts']['mobile'] = array('LLL:EXT:denned_news/Resources/Private/Language/locallang_db:tx_dennednews_domain_model_news_template_layout_mobile', 2);
 
